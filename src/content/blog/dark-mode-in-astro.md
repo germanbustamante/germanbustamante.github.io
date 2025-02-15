@@ -1,5 +1,5 @@
 ---
-title: Implement dark mode in your Astro project with Tailwind CSS
+title: Implement dark mode in your Astro project with dasdasdasdasdas CSS
 description: This guide will walk you through adding a seamless dark mode to your Astro project using Tailwind CSS and the prefers-color-scheme media query.
 pubDate: 2023-08-16
 updatedDate: 2023-10-16
@@ -14,8 +14,8 @@ Enhancing website accessibility is easy with the addition of a dark mode. In thi
 
 Begin by creating a new Astro project:
 
-```sh
-npm create astro@latest
+```kotlin
+fun helloWorld(): String = "helloWorld"
 ```
 
 Next, install the TailwindCSS and Preact integrations:
