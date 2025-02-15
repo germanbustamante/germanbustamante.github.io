@@ -10,7 +10,7 @@ export default defineConfig({
   image: {
     service: sharpImageService()
   },
-  site: "https://germanifeeldev.github.io",
+  site: "https://germanbustamante.github.io",
   vite: {
     plugins: [rawFonts([".ttf", ".woff"])],
     optimizeDeps: {
