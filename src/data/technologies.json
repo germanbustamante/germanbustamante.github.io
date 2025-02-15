@@ -1,114 +1,146 @@
 {
-  "Web Development": [
+  "Android Development": [
     {
-      "text": "HTML",
-      "logo": "mdi:language-html5"
+      "text": "Java",
+      "logo": "mdi:language-java"
     },
     {
-      "text": "JavaScript",
-      "logo": "mdi:language-javascript"
+      "text": "Kotlin",
+      "logo": "mdi:language-kotlin"
     },
     {
-      "text": "CSS",
-      "logo": "mdi:language-css3"
+      "text": "Android SDK",
+      "logo": "mdi:android"
     },
     {
-      "text": "PHP",
-      "logo": "mdi:language-php"
+      "text": "Jetpack Compose",
+      "logo": "mdi:android-studio"
     },
     {
-      "text": "Astro",
-      "logo": "simple-icons:astro"
+      "text": "Firebase",
+      "logo": "mdi:firebase"
     },
     {
-      "text": "Tailwind CSS",
-      "logo": "mdi:tailwind"
+      "text": "Room Database",
+      "logo": "mdi:database"
+    },
+    {
+      "text": "Retrofit",
+      "logo": "mdi:api"
+    },
+    {
+      "text": "LiveData",
+      "logo": "mdi:refresh"
+    },
+    {
+      "text": "Dagger",
+      "logo": "mdi:code-braces"
+    },
+    {
+      "text": "Hilt",
+      "logo": "mdi:code-braces"
+    },
+    {
+      "text": "Koin",
+      "logo": "mdi:code-braces"
+    },
+    {
+      "text": "Google SDK (Mapas, Notificaciones, etc.)",
+      "logo": "mdi:google-maps"
+    },
+    {
+      "text": "Testing (JUnit, Espresso)",
+      "logo": "mdi:test-tube"
+    }
+  ],
+  "App Architecture": [
+    {
+      "text": "Clean Architecture",
+      "logo": "mdi:layers-outline"
+    },
+    {
+      "text": "MVVM (Model-View-ViewModel)",
+      "logo": "mdi:view-dashboard"
+    },
+    {
+      "text": "MVP (Model-View-Presenter)",
+      "logo": "mdi:view-dashboard"
+    },
+    {
+      "text": "MVC (Model-View-Controller)",
+      "logo": "mdi:view-dashboard"
+    },
+    {
+      "text": "Modular Architecture",
+      "logo": "mdi:package-variant"
+    },
+    {
+      "text": "Multi-Module Architecture",
+      "logo": "mdi:folder-multiple"
+    },
+    {
+      "text": "Layered Architecture",
+      "logo": "mdi:layers"
     }
   ],
   "Development Tools": [
     {
-      "text": "Visual Studio Code",
-      "logo": "mdi:visual-studio-code"
+      "text": "Android Studio",
+      "logo": "mdi:android-studio"
     },
     {
       "text": "Git",
       "logo": "mdi:git"
+    },
+    {
+      "text": "Gradle",
+      "logo": "mdi:gradle"
+    },
+    {
+      "text": "Postman",
+      "logo": "mdi:postman"
     }
   ],
-  "Hosting and Cloud Services": [
+  "Cloud and Backend Services": [
     {
-      "text": "DigitalOcean",
-      "logo": "mdi:digital-ocean"
-    },
-    {
-      "text": "Cloudflare",
-      "logo": "cib:cloudflare"
-    },
-    {
-      "text": "Netlify",
-      "logo": "cib:netlify"
+      "text": "Firebase",
+      "logo": "mdi:firebase"
     }
   ],
-  "Operating Systems": [
+  "Design Patterns": [
     {
-      "text": "Windows",
-      "logo": "mdi:windows"
+      "text": "MVC",
+      "logo": "mdi:vector-square"
     },
     {
-      "text": "Ubuntu",
-      "logo": "mdi:ubuntu"
-    }
-  ],
-  "Other Programming Languages and Technologies": [
-    {
-      "text": "Lua",
-      "logo": "mdi:language-lua"
+      "text": "MVP",
+      "logo": "mdi:vector-square"
     },
     {
-      "text": "Golang",
-      "logo": "mdi:language-go"
+      "text": "MVVM",
+      "logo": "mdi:vector-square"
     },
     {
-      "text": "Node.js",
-      "logo": "mdi:nodejs"
-    }
-  ],
-  "Web Servers": [
-    {
-      "text": "Apache",
-      "logo": "cib:apache"
-    },
-    {
-      "text": "Nginx",
-      "logo": "cib:nginx"
-    }
-  ],
-  "Databases": [
-    {
-      "text": "MySQL",
-      "logo": "cib:mysql"
-    },
-    {
-      "text": "MongoDB",
-      "logo": "cib:mongodb"
+      "text": "Singleton",
+      "logo": "mdi:vector-square"
     }
   ],
   "Other Software": [
     {
-      "text": "Discord",
-      "logo": "mdi:discord"
+      "text": "GitHub",
+      "logo": "mdi:github"
     },
     {
-      "text": "Spotify",
-      "logo": "mdi:spotify"
+      "text": ".NET",
+      "logo": "mdi:dot-net"
     },
     {
-      "text": "Visual Studio",
-      "logo": "mdi:visual-studio"
+      "text": "Xamarin",
+      "logo": "mdi:microsoft"
     },
     {
-      "text": "Brave",
-      "logo": "cib:brave"
+      "text": "UWP",
+      "logo": "mdi:microsoft"
     }
   ]
 }

@@ -1,13 +1,13 @@
-export const tag = "@cojocaru-david";
-export const author = "David Cojocaru";
+export const tag = "@germanbustamante";
+export const author = "German Bustamande Conde";
 
 export const defaultMeta = {
-  title: "David Cojocaru - Home",
+  title: "German Bustamante Conde - Inicio",
   description:
-    "Discover the portfolio and blog of David Cojocaru, a 16-year-old software developer and cybersecurity enthusiast from Romania. Explore his expertise in web development, programming languages, and more.",
-  keywords: ["david cojocaru", "junior software developer", "junior", "cybersecurity enthusiast", "web development", "programming", "portfolio", "blog", "romania"],
+    "Descubre el portafolio y blog de German Bustamante Conde, un desarrollador móvil especializado en Android. Explora su experiencia en desarrollo de aplicaciones móviles, programación y más.",
+  keywords: ["german bustamante conde", "desarrollador móvil", "android", "desarrollo de aplicaciones", "programación", "portafolio", "blog"],
   ogImage: {
-    src: "/banner.png",
-    alt: "David Cojocaru - Home",
+    src: "/german_picture.jpg",
+    alt: "German Bustamante Conde - Inicio",
   },
 };

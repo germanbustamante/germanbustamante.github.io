@@ -46,23 +46,21 @@ jobs:
         with:
           node-version: "18.14.1"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
+          cache-dependency-path: package-lock.json # Correct path for package-lock.json
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-        working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
-        working-directory: ${{ env.BUILD_PATH }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.BUILD_PATH }}
+          path: dist
 
   deploy:
     environment:

@@ -44,7 +44,7 @@ export async function GET(context: APIContext) {
         <div tw="flex items-center bg-zinc-800/50 rounded-lg px-4 py-2">
           <img src="https://i.imgur.com/0KpLrT2.png" tw="w-15 h-15" />
           <div tw="flex flex-col ml-4 border-l border-zinc-700/50 pl-4">
-            <span tw="text-zinc-400 font-semibold">David Cojocaru</span>
+            <span tw="text-zinc-400 font-semibold">German De Bustamante Conde</span>
             <span tw="text-zinc-400 text-sm">cojocaru-david</span>
           </div>
         </div>

@@ -1,18 +1,18 @@
 [
   {
     "href": "/",
-    "text": "Home"
+    "text": "Inicio"
   },
   {
     "href": "/projects/",
-    "text": "Projects"
+    "text": "Proyectos"
   },
   {
     "href": "/blog/",
-    "text": "Blog"
+    "text": "Posts"
   },
   {
-    "href": "https://github.com/cojocaru-david/cojocarudavid.me",
+    "href": "https://github.com/germanbustamante",
     "target": "_blank",
     "rel": "noopener noreferrer",
     "text": "GitHub"
