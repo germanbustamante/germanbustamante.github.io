@@ -94,11 +94,11 @@
     },
     {
       "text": "Gradle",
-      "logo": "mdi:gradle"
+      "logo": "mdi:graph"
     },
     {
       "text": "Postman",
-      "logo": "mdi:postman"
+      "logo": "mdi:api"
     }
   ],
   "Cloud and Backend Services": [
