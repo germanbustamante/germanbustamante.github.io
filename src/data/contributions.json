@@ -1,26 +1,12 @@
 [
   {
-    "name": "cojocaru-david",
-    "stars": 33,
-    "url": "https://github.com/cojocaru-david/cojocarudavid.me",
-    "description": "Blazing fast personal website built with Astro.js and styled with Tailwind CSS.",
+    "name": "Ringtone Manager (en desarrollo)",
+    "website": null,
+    "stars": null,
+    "url": "https://github.com/GermanBustamante/Ringtone-Manager",
+    "description": "Ringtone Manager  es una app Android para gestionar y personalizar tonos de llamada, alarmas y notificaciones. Con una interfaz simple y eficiente, permite a los usuarios agregar y asignar tonos fácilmente. El backend está gestionado con Firebase para un rendimiento óptimo y una sincronización en tiempo real. Próximamente disponible en la Play Store.",
     "languages": [
-      "Astro",
-      "TypeScript",
-      "JavaScript",
-      "CSS"
-    ],
-    "role": "author"
-  },
-  {
-    "name": "david-dark-code",
-    "stars": 12,
-    "url": "https://github.com/cojocaru-david/david-dark-code",
-    "website": "https://marketplace.visualstudio.com/items?itemName=cojocaru-david.david-dark-code",
-    "description": "David Dark is a dark theme for VS Code. It is based on the github theme and the default dark theme. It is designed to be easy on the eyes and to be used for long periods of time.",
-    "languages": [
-      "NodeJS",
-      "JSON"
+      "Android", "Kotlin", "Gradle", "Firebase"
     ],
     "role": "author"
   }

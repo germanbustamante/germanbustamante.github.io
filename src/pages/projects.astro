@@ -11,34 +11,35 @@ interface Project {
   role: "author" | "contributor" | "maintainer";
   url: string;
   languages: string[];
+  website: string | null;
 }
 
 const openSourceContributions = data as Project[];
 
-openSourceContributions.sort((a, b) => {
-  if (a.role === "maintainer" && b.role !== "maintainer") {
-    return -1;
-  }
-  if (a.role === "maintainer" && b.role === "maintainer") {
-    return a.stars > b.stars ? -1 : 1;
-  }
-  if (a.role === "author" && b.role === "author") {
-    return a.stars > b.stars ? -1 : 1;
-  }
-  if (a.role === "author" && b.role !== "author") {
-    return -1;
-  }
-  return 0;
-});
+// openSourceContributions.sort((a, b) => {
+//   if (a.role === "maintainer" && b.role !== "maintainer") {
+//     return -1;
+//   }
+//   if (a.role === "maintainer" && b.role === "maintainer") {
+//     return a.stars > b.stars ? -1 : 1;
+//   }
+//   if (a.role === "author" && b.role === "author") {
+//     return a.stars > b.stars ? -1 : 1;
+//   }
+//   if (a.role === "author" && b.role !== "author") {
+//     return -1;
+//   }
+//   return 0;
+// });
 
-const description = "I love open source and I have been contributing to different projects for the some time. Here is a list of projects that I have contributed to and authored.";
+const description = "Soy desarrollador de Android y me apasiona crear aplicaciones útiles y bien diseñadas. A lo largo de mi carrera, he trabajado en diversos proyectos, desde la gestión de tonos de llamada hasta aplicaciones con integración en tiempo real mediante Firebase. En esta página puedes ver los proyectos en los que he contribuido y los que he desarrollado. ¡Explora y descubre más!";
 
 ---
 
-<AppLayout title="German De Bustamante Conde - Projects" 
+<AppLayout title="GermanDev - Projects" 
            tags={["projects", "open source", "contributions", "github", "developer", "software engineer", "software developer", "software engineering", "software development", "web developer", "web development", "full stack", "full stack developer" ]}
            description={description}>
-  <Header title="Open Source" />
+  <Header title="Proyectos" />
   <p
     class="max-w-prose mb-10 font-normal dark:text-zinc-400 text-zinc-600 leading-relaxed"
   >
