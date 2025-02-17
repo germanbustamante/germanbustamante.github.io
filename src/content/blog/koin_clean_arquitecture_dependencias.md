@@ -3,7 +3,7 @@ title: Gestión de Dependencias con Clean Architecture en Koin
 description: Explorando los desafíos y soluciones para gestionar dependencias en proyectos Android usando Koin como inyector de dependencias.
 pubDate: 2025-02-14
 hero: "~/assets/heros/koin_and_kotlin.png"
-heroAlt: "Astro logo with a dark background"
+heroAlt: "Koin with kotlin logo"
 tags: ["Kotlin", "Android", "Koin", "Clean Architecture", "Kotlin Multiplatform"]
 ---
 
