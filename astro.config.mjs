@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import mdx from '@astrojs/mdx';
 import compressor from "astro-compressor";
 
-// https://astro.build/config
+// https://astro.build/config test
 export default defineConfig({
   integrations: [tailwind(), compressor(), mdx()],
   image: {
