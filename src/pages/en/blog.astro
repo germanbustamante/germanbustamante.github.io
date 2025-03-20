@@ -2,15 +2,18 @@
 import AppLayout from "@layouts/AppLayout.astro";
 import BlogCard from "@components/BlogCard.astro";
 import Header from "@components/Header.astro";
+import { getLangFromUrl } from '../../i18n/home/utils';
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate),
+).filter(
+    (a) => a.data.language === getLangFromUrl(Astro.url)
 );
 
 const title = "Posts - GermanDev";
 const description =
-  "Mi colección personal de snippets de código, guías de inicio, tutoriales y recursos sobre desarrollo mobile, con un enfoque especial en Android. Espero que encuentres algo útil aquí";
+  "My personal collection of code snippets, getting started guides, tutorials, and resources on mobile development, with a special focus on Android. I hope you find something useful here.";
 ---
 
 <AppLayout title={title} description={description}>

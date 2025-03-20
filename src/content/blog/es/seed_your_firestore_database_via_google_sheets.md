@@ -5,6 +5,7 @@ pubDate: 2025-03-12
 hero: "~/assets/heros/google_sheet_with_firestore.jpg"
 heroAlt: "Firestore y Google Sheets conectados"
 tags: ["Firebase", "Firestore", "Google Sheets", "Automatización", "Base de Datos", "Apps Script"]
+language: "es"
 ---
 
 # Cómo llenar tu base de datos de Firestore usando Google Sheets

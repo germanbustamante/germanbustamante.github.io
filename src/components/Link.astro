@@ -1,5 +1,8 @@
 ---
 import type { HTMLAttributes } from "astro/types";
+import { getLangFromUrl } from '../i18n/home/utils';
+import { useTranslations } from  '../i18n/navigation/ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 
 interface Props extends HTMLAttributes<"a"> {
   text: string;
@@ -16,6 +19,10 @@ if (!href) {
     typeof href === "string" ? href : href.href,
   );
 }
+
+const lang = getLangFromUrl(Astro.url);
+const translation = useTranslations(lang);
+const hrefLocaleUrl = getRelativeLocaleUrl(lang, href)
 ---
 
 <a
@@ -26,9 +33,9 @@ if (!href) {
     addClass,
   ]}
   aria-current={isActive ? "page" : undefined}
-  href={href}
+  href={hrefLocaleUrl}
   {...props}
   aria-label={`Go to ${text} page`}
 >
-  {text}
+  {translation(text)}
 </a>

@@ -1,14 +1,14 @@
 [
   {
     "href": "/",
-    "text": "Inicio"
+    "text": "navigation.home"
   },
   {
     "href": "/projects/",
-    "text": "Proyectos"
+    "text": "navigation.projects"
   },
   {
     "href": "/blog/",
-    "text": "Posts"
+    "text": "navigation.blog"
   }
 ]

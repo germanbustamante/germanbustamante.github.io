@@ -5,6 +5,7 @@ pubDate: 2025-02-17
 hero: "~/assets/heros/trusted_time_api.png"
 heroAlt: "Trusted time API logo"
 tags: ["Android", "Time", "API", "TrustedTime", "Google Play Services"]
+language: "es"
 ---
 # Presentando la API TrustedTime
 
