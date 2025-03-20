@@ -5,6 +5,7 @@ pubDate: 2025-02-14
 hero: "~/assets/heros/koin_and_kotlin.png"
 heroAlt: "Koin with kotlin logo"
 tags: ["Kotlin", "Android", "Koin", "Clean Architecture", "Kotlin Multiplatform"]
+language: "es"
 ---
 
 La Clean Architecture en Android promueve la separación de responsabilidades en capas, como `:data`, `:domain` y `:presentation`, para lograr un código modular y mantenible. Cada capa se enfoca en preocupaciones específicas, mejorando la legibilidad y mantenibilidad del código.

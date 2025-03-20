@@ -1,24 +1,24 @@
 [
   {
-    "name": "Ringtone Manager (en desarrollo)",
+    "name": "project.ringtone_manager.name",
     "website": null,
     "stars": null,
     "url": "https://github.com/GermanBustamante/Ringtone-Manager",
-    "description": "Ringtone Manager  es una app Android para gestionar y personalizar tonos de llamada, alarmas y notificaciones. Permite a los usuarios agregar y asignar tonos fácilmente. El backend está gestionado con Firebase para un rendimiento óptimo y una sincronización en tiempo real. Próximamente disponible en la Play Store.",
+    "description": "project.ringtone_manager.description",
     "languages": [
       "Android", "Kotlin", "Gradle", "Firebase"
     ],
-    "role": "author"
+    "role": "project.author_role"
   },
   {
-    "name": "InaDraft",
+    "name": "project.inadraft.name",
     "website": null,
     "stars": null,
     "url": "https://github.com/GermanBustamante/InaDraft",
-    "description": "Una aplicación Android para crear plantillas personalizadas de tus jugadores favoritos de la serie de fútbol Inazuma Eleven. Elige una alineación, crea tu equipo favorito y entra en el ranking de los mejores equipos creados. Fué mi proyecto de TFG y esta creado desde cero, desde la app hasta el backend, desarrolado con .NET, este actualmente ya está caído porque se me acabaron los bonos de estudiante para mantenerlo, pero pienso migrarlo a Firebase y retomar este proyecto.",
+    "description": "project.inadraft.description",
     "languages": [
       "Android", "Kotlin", "Gradle", ".NET", "C#", "SQL Server"
     ],
-    "role": "author"
+    "role": "project.author_role"
   }
 ]

@@ -1,0 +1,65 @@
+---
+import AppLayout from "@layouts/AppLayout.astro";
+import Header from "@components/Header.astro";
+import data from "@data/contributions.json";
+import ProjectCard from "@components/ProjectCard.astro";
+import { getLangFromUrl } from '../../i18n/home/utils';
+import { useTranslations } from  '../../i18n/project/ui';
+
+const lang = getLangFromUrl(Astro.url);
+const translation = useTranslations(lang);
+
+interface Project {
+  name: string;
+  description: string;
+  stars: number;
+  role: "author" | "contributor" | "maintainer";
+  url: string;
+  languages: string[];
+  website: string | null;
+}
+
+const openSourceContributions = data as Project[];
+
+// openSourceContributions.sort((a, b) => {
+//   if (a.role === "maintainer" && b.role !== "maintainer") {
+//     return -1;
+//   }
+//   if (a.role === "maintainer" && b.role === "maintainer") {
+//     return a.stars > b.stars ? -1 : 1;
+//   }
+//   if (a.role === "author" && b.role === "author") {
+//     return a.stars > b.stars ? -1 : 1;
+//   }
+//   if (a.role === "author" && b.role !== "author") {
+//     return -1;
+//   }
+//   return 0;
+// });
+---
+
+<AppLayout title="GermanDev - Projects" 
+           tags={["projects", "open source", "contributions", "github", "developer", "software engineer", "software developer", "software engineering", "software development", "web developer", "web development", "full stack", "full stack developer" ]}
+           description={translation('project.description')}>
+  <Header title={translation('project.title')} />
+  <p
+    class="max-w-prose mb-10 font-normal dark:text-zinc-400 text-zinc-600 leading-relaxed"
+  >
+    {translation('project.description')}
+  </p>
+  <ul class="grid grid-cols-1 gap-8">
+    {
+      openSourceContributions.map((project) => (
+        <ProjectCard
+          name={translation(project.name)}
+          description={translation(project.description)}
+          stars={project.stars}
+          role={translation(project.role)}
+          url={project.url}
+          languages={project.languages}
+          website={project.website}
+        />
+      ))
+    }
+  </ul>
+</AppLayout>

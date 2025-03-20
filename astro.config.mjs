@@ -16,6 +16,19 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"]
     }
+  },
+  i18n: {
+    locales: ["en", "es", "fr", "de", "uk"],
+    defaultLocale: "en",
+    fallback: {
+      fr: "en",
+      de: "en",
+      uk: "en"
+    },
+    routing : {
+      prefixDefaultLocale: true,
+      fallbackType: "redirect",
+    }
   }
 });
 

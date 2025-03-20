@@ -1,8 +1,11 @@
 ---
 import { getCollection } from "astro:content";
+import { getLangFromUrl } from '../i18n/home/utils';
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+).filter(
+    (a) => a.data.language === getLangFromUrl(Astro.url)
 );
 
 const index = posts.findIndex((post) => {

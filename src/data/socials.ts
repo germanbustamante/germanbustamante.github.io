@@ -1,5 +1,5 @@
 export const tag = "@germanbustamante";
-export const author = "German Bustamande Conde";
+export const author = "German Bustamante Conde";
 
 export const defaultMeta = {
   title: "German Bustamante Conde - Inicio",

@@ -16,11 +16,12 @@ interface Props {
   pubDate: Date;
   description: string;
   tags: string[];
+  language: string;
 }
 
 export async function GET(context: APIContext) {
-  const { title, pubDate, description, tags } = context.props as Props;
-  const date = pubDate.toLocaleDateString('en-US', { dateStyle: 'full' });
+  const { title, pubDate, description, tags, language } = context.props as Props;
+  const date = pubDate.toLocaleDateString(language, { dateStyle: 'full' });
 
   const markup = html`
     <div tw="bg-zinc-900 flex flex-col w-full h-full rounded-lg overflow-hidden shadow-lg text-white border border-zinc-700/50 divide-y divide-zinc-700/50 divide-solid">
@@ -93,17 +94,24 @@ export async function GET(context: APIContext) {
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  const paths = posts.map((post) => ({
-    params: {
-      slug: post.slug,
+  const paths = posts.map((post) => {
+    // Divide el slug para obtener idioma y slug real
+    const [language, ...slugParts] = post.slug.split('/');
+    const actualSlug = slugParts.join('/');
 
-    },
-    props: {
-      title: post.data.title,
-      pubDate: post.data.updatedDate ?? post.data.pubDate,
-      description: post.data.description,
-      tags: post.data.tags,
-    },
-  }));
+    return {
+      params: {
+        // Usa solo la parte del slug sin el idioma
+        slug: actualSlug
+      },
+      props: {
+        title: post.data.title,
+        pubDate: post.data.updatedDate ?? post.data.pubDate,
+        description: post.data.description,
+        tags: post.data.tags,
+        language: language
+      },
+    };
+  });
   return paths;
 }

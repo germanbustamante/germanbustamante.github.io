@@ -3,6 +3,11 @@ import AppLayout from "@layouts/AppLayout.astro";
 import Header from "@components/Header.astro";
 import data from "@data/contributions.json";
 import ProjectCard from "@components/ProjectCard.astro";
+import { getLangFromUrl } from '../../i18n/home/utils';
+import { useTranslations } from  '../../i18n/project/ui';
+
+const lang = getLangFromUrl(Astro.url);
+const translation = useTranslations(lang);
 
 interface Project {
   name: string;
@@ -31,31 +36,28 @@ const openSourceContributions = data as Project[];
 //   }
 //   return 0;
 // });
-
-const description = "Soy desarrollador de Android y me apasiona crear aplicaciones útiles y bien diseñadas. A lo largo de mi carrera, he trabajado en diversos proyectos, desde la gestión de tonos de llamada hasta aplicaciones con integración en tiempo real mediante Firebase. En esta página puedes ver los proyectos en los que he contribuido y los que he desarrollado. ¡Explora y descubre más!";
-
 ---
 
 <AppLayout title="GermanDev - Projects" 
            tags={["projects", "open source", "contributions", "github", "developer", "software engineer", "software developer", "software engineering", "software development", "web developer", "web development", "full stack", "full stack developer" ]}
-           description={description}>
-  <Header title="Proyectos" />
+           description={translation('project.description')}>
+  <Header title={translation('project.title')} />
   <p
     class="max-w-prose mb-10 font-normal dark:text-zinc-400 text-zinc-600 leading-relaxed"
   >
-    {description}
+    {translation('project.description')}
   </p>
   <ul class="grid grid-cols-1 gap-8">
     {
       openSourceContributions.map((project) => (
         <ProjectCard
-          name={project.name}
-          description={project.description}
+          name={translation(project.name)}
+          description={translation(project.description)}
           stars={project.stars}
-          role={project.role}
+          role={translation(project.role)}
           url={project.url}
           languages={project.languages}
-          website={project.website || ""}
+          website={project.website}
         />
       ))
     }
