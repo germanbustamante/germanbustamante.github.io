@@ -1,6 +1,6 @@
 {
     "name": "German De Bustamante Conde - Personal Website",
-    "short_name": "cojocarudavid.me",
+    "short_name": "Germán Bustamante",
     "icons": [
      {
       "src": "\/android-icon-36x36.png",
@@ -51,8 +51,8 @@
         "purpose": "any maskable"
      }
     ],
-    "theme_color": "#60A5FA",
-    "background_color": "#18181B",
+    "theme_color": "#0a0a0a",
+    "background_color": "#0a0a0a",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",

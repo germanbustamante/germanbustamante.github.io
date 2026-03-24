@@ -1,14 +1,7 @@
 [
-  {
-    "href": "/",
-    "text": "navigation.home"
-  },
-  {
-    "href": "/projects/",
-    "text": "navigation.projects"
-  },
-  {
-    "href": "/blog/",
-    "text": "navigation.blog"
-  }
+  { "href": "#home", "text": "navigation.home", "type": "anchor" },
+  { "href": "#experience", "text": "navigation.experience", "type": "anchor" },
+  { "href": "#projects", "text": "navigation.projects", "type": "anchor" },
+  { "href": "/blog/", "text": "navigation.blog", "type": "page" },
+  { "href": "#contact", "text": "navigation.contact", "type": "anchor" }
 ]

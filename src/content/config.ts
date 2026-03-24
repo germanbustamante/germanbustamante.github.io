@@ -2,6 +2,7 @@ import { defineCollection, z } from 'astro:content';
 
 const blogCollection = defineCollection({
   type: 'content',
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   schema: ({ image }: { image: () => z.ZodType<any> }) =>
     z.object({
       title: z.string().max(80).min(10),

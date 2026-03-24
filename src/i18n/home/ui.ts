@@ -1,119 +1,126 @@
 export const languages = {
-    en: 'English',
-    es: 'Español',
+  en: "English",
+  es: "Español",
 };
-
-export const languagesImages = {
-    en: '~/assets/heros/google_sheet_with_firestore.jpg',
-    es: '~/assets/heros/google_sheet_with_firestore.jpg',
-};
-
-export const routes = {
-    en: {
-      'blog': 'pepe/en',
-    },
-    es: {
-      'blog': 'pepe/en',
-    },
-  }
 
 export const showDefaultLang = false;
-export const defaultLanguage = 'en';
+export const defaultLanguage = "en";
 
 export const homeTranslationKeys = {
-    'en': {
-        // Navigation
-        'home.home': 'Home',
-        'home.about': 'About',
-        'home.contact': 'Contact',
-        'home.blog': 'Blog',
-        'home.projects': 'Projects',
-        'home.resume': 'Resume',
-        
-        // Header
-        'home.jobTitle': 'Mobile Developer at Ifeel',
-        'home.bio': 'Android developer with over 5 years of experience, 3 of them professionally. Passionate about scalable architectures and code best practices. Always learning and open to new challenges.',
-        
-        // Section Titles
-        'home.aboutMe': 'About Me',
-        'home.mySkills': 'My Skills',
-        'home.myWork': 'My Work',
-        'home.latestPosts': 'Latest Posts',
-        'home.getInTouch': 'Get In Touch',
-        
-        // Skills Section
-        'home.technologies': 'These are some of the technologies I have been working with:',
-        
-        // Project Section
-        'home.viewProject': 'View Project',
-        'home.viewCode': 'View Code',
-        
-        // Blog
-        'home.readMore': 'Read More',
-        'home.publishedOn': 'Published on',
-        'home.minuteRead': 'min read',
-        
-        // Contact Form
-        'home.name': 'Name',
-        'home.email': 'Email',
-        'home.message': 'Message',
-        'home.send': 'Send',
-        'home.sending': 'Sending...',
-        
-        // Footer
-        'home.copyright': 'All rights reserved',
-        'home.madeWith': 'Made with',
-        
-        // Meta
-        'home.pageTitle': 'German Bustamante Conde - Mobile Developer and Android Enthusiast',
-        'home.pageDescription': 'Personal website and portfolio of German Bustamante, Android developer with experience in Kotlin, Java, and mobile technologies.'
-    },
-    'es': {
-        // Navegación
-        'home.home': 'Inicio',
-        'home.about': 'Acerca de',
-        'home.contact': 'Contacto',
-        'home.blog': 'Blog',
-        'home.projects': 'Proyectos',
-        'home.resume': 'Currículum',
-        
-        // Encabezado
-        'home.jobTitle': 'Desarrollador Móvil en Ifeel',
-        'home.bio': 'Desarrollador Android con más de 5 años de experiencia, 3 de ellos de forma profesional. Apasionado por las arquitecturas escalables y las buenas prácticas de código. Siempre en constante aprendizaje y abierto a nuevos desafíos.',
-        
-        // Títulos de Sección
-        'home.aboutMe': 'Sobre mí',
-        'home.mySkills': 'Mis Habilidades',
-        'home.myWork': 'Mi Trabajo',
-        'home.latestPosts': 'Últimos Artículos',
-        'home.getInTouch': 'Contacta Conmigo',
-        
-        // Sección de Habilidades
-        'home.technologies': 'Estas son algunas de las tecnologías con las que he estado trabajando:',
-        
-        // Sección de Proyectos
-        'home.viewProject': 'Ver Proyecto',
-        'home.viewCode': 'Ver Código',
-        
-        // Blog
-        'home.readMore': 'Leer Más',
-        'home.publishedOn': 'Publicado el',
-        'home.minuteRead': 'min de lectura',
-        
-        // Formulario de Contacto
-        'home.name': 'Nombre',
-        'home.email': 'Correo Electrónico',
-        'home.message': 'Mensaje',
-        'home.send': 'Enviar',
-        'home.sending': 'Enviando...',
-        
-        // Pie de Página
-        'home.copyright': 'Todos los derechos reservados',
-        'home.madeWith': 'Hecho con',
-        
-        // Meta
-        'home.pageTitle': 'German Bustamante Conde - Desarrollador Móvil y Entusiasta de Android',
-        'home.pageDescription': 'Sitio web personal y portafolio de German Bustamante, desarrollador Android con experiencia en Kotlin, Java y tecnologías móviles.'
-    }
-};
+  en: {
+    // Meta
+    "home.pageTitle":
+      "Germán Bustamante — Senior Android Architect | Kotlin & KMP",
+    "home.pageDescription":
+      "Senior Android Architect specializing in Kotlin and Kotlin Multiplatform. I design scalable mobile architectures for apps serving 100K+ users.",
 
+    // Hero
+    "home.heroGreeting": "Hi, I'm",
+    "home.heroName": "Germán Bustamante",
+    "home.heroTitle": "Senior Android Architect | Kotlin & KMP",
+    "home.heroDescription":
+      "I design scalable mobile architectures for apps serving 100K+ users. Specialized in multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform — turning complex codebases into maintainable, high-quality systems.",
+    "home.heroCTA1": "View my work",
+    "home.heroCTA2": "Download CV",
+
+    // About
+    "home.aboutMe": "About Me",
+    "home.aboutParagraph":
+      "I'm a Senior Android Architect with 4+ years of professional experience building and scaling mobile applications. I'm passionate about clean code, modular architectures, and cross-platform development with Kotlin Multiplatform. When I'm not coding, I'm sharing what I learn through technical writing.",
+    "home.technologies":
+      "These are the technologies I work with on a daily basis:",
+
+    // Section Titles
+    "home.experienceTitle": "Professional Experience",
+    "home.projectsTitle": "Featured Projects",
+    "home.certificationsTitle": "Certifications",
+    "home.latestPosts": "Latest Posts",
+    "home.contactTitle": "Get In Touch",
+
+    // Contact
+    "home.contactCTA": "Interested in working together?",
+    "home.contactDescription":
+      "I'm always open to discussing new opportunities, interesting projects, or collaborations. Feel free to reach out.",
+    "home.contactButton": "Say hello",
+
+    // Blog
+    "home.readMore": "Read More",
+    "home.publishedOn": "Published on",
+    "home.minuteRead": "min read",
+    "home.viewAllPosts": "View all posts",
+
+    // Projects
+    "home.viewProject": "View Project",
+    "home.viewCode": "View Code",
+    "home.comingSoon": "Coming Soon",
+    "home.inDevelopment": "In Development",
+
+    // Footer
+    "home.copyright": "All rights reserved",
+    "home.builtWith": "Built with Astro",
+
+    // Misc
+    "home.present": "Present",
+    "home.remote": "Remote",
+    "home.onSite": "On-site",
+    "home.fullTime": "Full-time",
+  },
+  es: {
+    // Meta
+    "home.pageTitle":
+      "Germán Bustamante — Senior Android Architect | Kotlin & KMP",
+    "home.pageDescription":
+      "Senior Android Architect especializado en Kotlin y Kotlin Multiplatform. Diseño arquitecturas móviles escalables para apps con más de 100K usuarios.",
+
+    // Hero
+    "home.heroGreeting": "Hola, soy",
+    "home.heroName": "Germán Bustamante",
+    "home.heroTitle": "Senior Android Architect | Kotlin & KMP",
+    "home.heroDescription":
+      "Diseño arquitecturas móviles escalables para apps con más de 100K usuarios activos. Especializado en Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform — transformando codebases complejas en sistemas mantenibles y de alta calidad.",
+    "home.heroCTA1": "Ver mi trabajo",
+    "home.heroCTA2": "Descargar CV",
+
+    // About
+    "home.aboutMe": "Sobre Mí",
+    "home.aboutParagraph":
+      "Soy Senior Android Architect con más de 4 años de experiencia profesional construyendo y escalando aplicaciones móviles. Me apasiona el código limpio, las arquitecturas modulares y el desarrollo multiplataforma con Kotlin Multiplatform. Cuando no estoy programando, comparto lo que aprendo a través de escritura técnica.",
+    "home.technologies":
+      "Estas son las tecnologías con las que trabajo a diario:",
+
+    // Section Titles
+    "home.experienceTitle": "Experiencia Profesional",
+    "home.projectsTitle": "Proyectos Destacados",
+    "home.certificationsTitle": "Certificaciones",
+    "home.latestPosts": "Últimos Artículos",
+    "home.contactTitle": "Contacto",
+
+    // Contact
+    "home.contactCTA": "¿Interesado en trabajar juntos?",
+    "home.contactDescription":
+      "Siempre estoy abierto a discutir nuevas oportunidades, proyectos interesantes o colaboraciones. No dudes en contactarme.",
+    "home.contactButton": "Escríbeme",
+
+    // Blog
+    "home.readMore": "Leer Más",
+    "home.publishedOn": "Publicado el",
+    "home.minuteRead": "min de lectura",
+    "home.viewAllPosts": "Ver todos los artículos",
+
+    // Projects
+    "home.viewProject": "Ver Proyecto",
+    "home.viewCode": "Ver Código",
+    "home.comingSoon": "Próximamente",
+    "home.inDevelopment": "En Desarrollo",
+
+    // Footer
+    "home.copyright": "Todos los derechos reservados",
+    "home.builtWith": "Hecho con Astro",
+
+    // Misc
+    "home.present": "Presente",
+    "home.remote": "Remoto",
+    "home.onSite": "Presencial",
+    "home.fullTime": "Jornada completa",
+  },
+};

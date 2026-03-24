@@ -1,0 +1,20 @@
+---
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const otherLang = lang === "en" ? "es" : "en";
+
+// Build the URL for the other language
+const currentPath = Astro.url.pathname;
+const newPath = currentPath.replace(`/${lang}`, `/${otherLang}`);
+---
+
+<a
+  href={newPath || `/${otherLang}/`}
+  class="text-xs font-medium px-2 py-1 rounded border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:text-accent hover:border-accent dark:hover:text-accent dark:hover:border-accent transition-colors"
+  aria-label={`Switch to ${otherLang === "en" ? "English" : "Español"}`}
+>
+  {lang.toUpperCase()}
+</a>

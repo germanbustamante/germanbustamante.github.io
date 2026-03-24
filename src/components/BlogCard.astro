@@ -14,43 +14,37 @@ const fullDate = pubDate.toLocaleDateString("en", {
   month: "long",
   day: "numeric",
 });
-
 ---
 
 <li
-  class="dark:text-zinc-400 text-zinc-500 gap-1 p-6 border dark:border-zinc-700/60 rounded-lg flex flex-col bg-opacity-40 dark:bg-opacity-40 bg-zinc-50 dark:bg-zinc-800"
+  class="group p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-surface-card hover:border-accent/30 dark:hover:border-accent/30 transition-all duration-300"
+  data-animate
 >
-  <a class="flex flex-col gap-2" href={url}>
-    <div class="flex justify-between">
-      <div class="flex flex-col sm:flex-row sm:items-baseline gap-2">
-        <h1
-          class="text-lg font-medium dark:text-white text-zinc-700 [word-break:break-word]"
-        >
-          {title}
-        </h1>
-      </div>
+  <a class="flex flex-col gap-3" href={url}>
+    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+      <h3
+        class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors [word-break:break-word]"
+      >
+        {title}
+      </h3>
       <time
         datetime={pubDate.toISOString()}
-      class="block text-sm tracking-wide dark:text-zinc-400 text-zinc-600"
-      >{fullDate}
-    </time>
-
+        class="text-sm text-zinc-500 dark:text-zinc-500 whitespace-nowrap"
+      >
+        {fullDate}
+      </time>
     </div>
-    <p class="text-sm dark:text-zinc-400 text-zinc-600 mt-2">
+    <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
       {description}
     </p>
-    <div class="flex flex-wrap gap-2 mt-2 text-zinc-600 text-center">
-      <p class="text-sm dark:text-zinc-400 text-zinc-600 text-center mt-1">
-        Tags:
-      </p>
-      <ul class="flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <li class="dark:bg-zinc-700 bg-zinc-100 text-zinc-600 dark:text-zinc-300 rounded-md px-2 py-1 text-sm">
+    <div class="flex flex-wrap gap-1.5 mt-1">
+      {
+        tags.map((tag) => (
+          <span class="text-xs px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
             {tag}
-          </li>
-        ))}
-      </ul>
+          </span>
+        ))
+      }
     </div>
   </a>
 </li>
-

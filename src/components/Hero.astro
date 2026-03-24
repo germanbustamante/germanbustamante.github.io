@@ -1,0 +1,135 @@
+---
+import { Image } from "astro:assets";
+import authorImage from "~/assets/me.png";
+import { useTranslations } from "../i18n/home/utils";
+import { cvUrl } from "@data/socials";
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang as "en" | "es");
+---
+
+<section
+  id="home"
+  class="relative min-h-screen flex items-center justify-center pt-16"
+>
+  <!-- Subtle animated gradient background -->
+  <div
+    class="absolute inset-0 overflow-hidden pointer-events-none"
+    aria-hidden="true"
+  >
+    <div
+      class="absolute top-1/4 -left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-gradient-shift"
+      style="background-size: 200% 200%;"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-accent/3 rounded-full blur-3xl animate-gradient-shift"
+      style="animation-delay: 4s; background-size: 200% 200%;"
+    >
+    </div>
+  </div>
+
+  <div class="relative z-10 max-w-3xl text-center px-6">
+    <!-- Author photo -->
+    <div
+      class="mx-auto mb-8 opacity-0 animate-fade-in"
+      style="animation-delay: 100ms;"
+    >
+      <div
+        class="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto ring-2 ring-accent/30 ring-offset-4 ring-offset-white dark:ring-offset-[#0a0a0a]"
+      >
+        <Image
+          src={authorImage}
+          alt="Germán Bustamante"
+          loading="eager"
+          width={256}
+          height={256}
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    <p
+      class="text-accent font-medium mb-4 text-lg opacity-0 animate-fade-in"
+      style="animation-delay: 300ms;"
+    >
+      {t("home.heroGreeting")}
+    </p>
+    <h1
+      class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4 opacity-0 animate-fade-in-up"
+      style="animation-delay: 500ms;"
+    >
+      {t("home.heroName")}
+    </h1>
+    <p
+      class="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-400 font-medium mb-6 opacity-0 animate-fade-in-up"
+      style="animation-delay: 700ms;"
+    >
+      {t("home.heroTitle")}
+    </p>
+    <p
+      class="text-base sm:text-lg text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up"
+      style="animation-delay: 900ms;"
+    >
+      {t("home.heroDescription")}
+    </p>
+
+    <div
+      class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up"
+      style="animation-delay: 1100ms;"
+    >
+      <a
+        href="#projects"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-medium hover:bg-accent-dark transition-colors"
+      >
+        {t("home.heroCTA1")}
+      </a>
+      <a
+        href={cvUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium hover:border-accent hover:text-accent dark:hover:border-accent dark:hover:text-accent transition-colors"
+      >
+        {t("home.heroCTA2")}
+        <svg
+          class="w-4 h-4 ml-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div
+    class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in"
+    style="animation-delay: 1500ms;"
+  >
+    <div class="animate-bounce">
+      <svg
+        class="w-6 h-6 text-zinc-400"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </div>
+</section>

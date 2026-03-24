@@ -1,13 +1,30 @@
 export const tag = "@germanbustamante";
-export const author = "German Bustamante Conde";
+export const author = "Germán Bustamante";
+export const fullName = "Germán De Bustamante Conde";
+export const email = "germanbustamante.trabajo@gmail.com";
+export const githubUrl = "https://github.com/germanbustamante";
+export const linkedinUrl = "https://www.linkedin.com/in/germandebustamante/";
+
+// CV: Replace with your Google Drive (or other) direct download link
+// Google Drive format: https://drive.google.com/uc?export=download&id=YOUR_FILE_ID
+export const cvUrl = "https://drive.google.com/uc?export=download&id=1xDqlNJd8D33KiZ9lGTQig7UBTtjrLbon";
 
 export const defaultMeta = {
-  title: "German Bustamante Conde - Inicio",
+  title: "Germán Bustamante — Senior Android Architect | Kotlin & KMP",
   description:
-    "Descubre el portafolio y blog de German Bustamante Conde, un desarrollador móvil especializado en Android. Explora su experiencia en desarrollo de aplicaciones móviles, programación y más.",
-  keywords: ["german bustamante conde", "desarrollador móvil", "android", "desarrollo de aplicaciones", "programación", "portafolio", "blog"],
+    "Senior Android Architect specializing in Kotlin and Kotlin Multiplatform. I design scalable mobile architectures for apps serving 100K+ users.",
+  keywords: [
+    "germán bustamante",
+    "android architect",
+    "kotlin",
+    "kotlin multiplatform",
+    "kmp",
+    "jetpack compose",
+    "clean architecture",
+    "mobile development",
+  ],
   ogImage: {
-    src: "/german_picture.jpg",
-    alt: "German Bustamante Conde - Inicio",
+    src: "/banner.png",
+    alt: "Germán Bustamante — Senior Android Architect",
   },
 };

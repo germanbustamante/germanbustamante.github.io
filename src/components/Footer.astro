@@ -1,20 +1,25 @@
 ---
-import { Icon } from "astro-icon";
+import { author } from "@data/socials";
+import { useTranslations } from "../i18n/home/utils";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+const t = useTranslations(lang as "en" | "es");
+const year = new Date().getFullYear();
 ---
 
-<script>
-    const currentYear = new Date().getFullYear();
-    const yearElement = document.getElementById('year');
-    yearElement.innerText = currentYear;
-</script>
-
-<footer class="flex items-center text-zinc-400 mt-7 justify-center h-16 w-full flex-col gap-2">
-    <div class="text-sm text-center cursor-default">
-        2025 &copy;&nbsp;<a href="https://github.com/germanbustamante" class="text-zinc-200 hover:text-zinc-500">German De Bustamante Conde</a>
-    </div>
-    <p class="text-sm text-center flex flex-col items-center justify-center mt-1 gap-1">
-        <a href="mailto:germanbustamante.trabajo@gmail.com" class="text-zinc-200 hover:text-zinc-500" title="Email" rel="noopener noreferrer">
-            <Icon name="mdi:email" class="w-4 h-4" />
-        </a>
+<footer
+  class="border-t border-zinc-200 dark:border-zinc-800 py-8 px-6"
+>
+  <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-zinc-500 dark:text-zinc-500">
+      {year} &copy; {author}. {t("home.copyright")}.
     </p>
+    <p class="text-sm text-zinc-500 dark:text-zinc-500">
+      {t("home.builtWith")}
+    </p>
+  </div>
 </footer>

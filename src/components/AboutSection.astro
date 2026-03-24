@@ -1,0 +1,50 @@
+---
+import SectionHeading from "@components/SectionHeading.astro";
+import Skill from "@components/Skill.astro";
+import technologies from "@data/technologies.json";
+import { useTranslations } from "../i18n/home/utils";
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang as "en" | "es");
+---
+
+<section id="about" class="py-20 sm:py-28">
+  <SectionHeading title={t("home.aboutMe")} number="01" />
+
+  <div data-animate>
+    <p
+      class="max-w-2xl text-zinc-600 dark:text-zinc-400 text-base sm:text-lg leading-relaxed mb-12"
+    >
+      {t("home.aboutParagraph")}
+    </p>
+  </div>
+
+  <div data-animate>
+    <p
+      class="text-zinc-500 dark:text-zinc-500 text-sm font-medium uppercase tracking-wider mb-6"
+    >
+      {t("home.technologies")}
+    </p>
+  </div>
+
+  <ul class="space-y-8">
+    {
+      Object.entries(technologies).map(([category, techList]) => (
+        <li class="flex flex-col" data-animate>
+          <h3 class="text-sm font-semibold text-zinc-700 dark:text-zinc-300 mb-3 uppercase tracking-wider">
+            {category}
+          </h3>
+          <ul class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            {techList.map((tech, index) => (
+              <Skill key={index} {...tech} />
+            ))}
+          </ul>
+        </li>
+      ))
+    }
+  </ul>
+</section>

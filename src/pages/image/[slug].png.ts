@@ -30,7 +30,7 @@ export async function GET(context: APIContext) {
         <div tw="flex text-zinc-400 text-xl">
           ${date}
         </div>
-        <div tw="flex text-6xl mb-4 w-full font-bold leading-snug tracking-tight text-transparent bg-indigo-400" style="background-clip: text; -webkit-background-clip: text; background: linear-gradient(90deg, rgb(87, 57, 249), rgb(98, 203, 242));">
+        <div tw="flex text-6xl mb-4 w-full font-bold leading-snug tracking-tight text-transparent bg-teal-400" style="background-clip: text; -webkit-background-clip: text; background: linear-gradient(90deg, rgb(13, 148, 136), rgb(45, 212, 191));">
           ${title}
         </div>
         <div tw="text-zinc-400 text-xl mt-4">${description}</div>
@@ -39,14 +39,13 @@ export async function GET(context: APIContext) {
       <div tw="w-full h-1/5 border-t border-zinc-700/50 flex p-10 items-center justify-between text-2xl">
       
         <div tw="flex items-center">
-          <span tw="ml-3 text-zinc-500">cojocarudavid.me</span>
+          <span tw="ml-3 text-zinc-500">germanbustamante.github.io</span>
         </div>
 
         <div tw="flex items-center bg-zinc-800/50 rounded-lg px-4 py-2">
-          <img src="https://i.imgur.com/0KpLrT2.png" tw="w-15 h-15" />
-          <div tw="flex flex-col ml-4 border-l border-zinc-700/50 pl-4">
-            <span tw="text-zinc-400 font-semibold">German De Bustamante Conde</span>
-            <span tw="text-zinc-400 text-sm">cojocaru-david</span>
+          <div tw="flex flex-col ml-4">
+            <span tw="text-zinc-400 font-semibold">Germán Bustamante</span>
+            <span tw="text-zinc-400 text-sm">@germanbustamante</span>
           </div>
         </div>
       </div>
@@ -93,25 +92,22 @@ export async function GET(context: APIContext) {
 }
 
 export async function getStaticPaths() {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const posts = await getCollection('blog');
-  const paths = posts.map((post) => {
-    // Divide el slug para obtener idioma y slug real
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-return
+  return posts.map((post: { slug: string; data: { title: string; updatedDate?: Date; pubDate: Date; description: string; tags: string[] } }) => {
     const [language, ...slugParts] = post.slug.split('/');
     const actualSlug = slugParts.join('/');
 
     return {
-      params: {
-        // Usa solo la parte del slug sin el idioma
-        slug: actualSlug
-      },
+      params: { slug: actualSlug },
       props: {
         title: post.data.title,
         pubDate: post.data.updatedDate ?? post.data.pubDate,
         description: post.data.description,
         tags: post.data.tags,
-        language: language
+        language: language,
       },
     };
   });
-  return paths;
 }

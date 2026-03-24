@@ -1,38 +1,43 @@
 ---
 import AppLayout from "@layouts/AppLayout.astro";
 import BlogCard from "@components/BlogCard.astro";
-import Header from "@components/Header.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/home/utils";
 import { getCollection } from "astro:content";
-import {getLangFromUrl} from "../../i18n/home/utils";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate),
-).filter(
-    (a) => a.data.language === getLangFromUrl(Astro.url)
-);
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-const title = "Posts - GermanDev";
-const description = "Mi colección personal de snippets de código, guías de inicio, tutoriales y recursos sobre desarrollo mobile, con un enfoque especial en Android. Espero que encuentres algo útil aquí";
+const posts = (await getCollection("blog"))
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .filter((a) => a.data.language === lang);
+
+const title = `Blog — ${t("home.pageTitle")}`;
+const description = t("home.pageDescription");
 ---
 
 <AppLayout title={title} description={description}>
-  <Header title="Posts" />
-  <p
-    class="max-w-prose mb-10 font-normal dark:text-zinc-400 text-zinc-600 leading-relaxed"
-  >
-    {description}
-  </p>
-  <ul class="space-y-8">
+  <div class="pt-24 pb-16">
+    <SectionHeading title="Blog" />
+    <ul class="space-y-4">
+      {
+        posts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            pubDate={post.data.pubDate}
+            description={post.data.description}
+            url={`/blog/${post.slug}/`}
+            tags={post.data.tags}
+          />
+        ))
+      }
+    </ul>
     {
-      posts.map((post) => (
-        <BlogCard
-          title={post.data.title}
-          pubDate={post.data.pubDate}
-          description={post.data.description}
-          url={`/blog/${post.slug}/`}
-          tags={post.data.tags}
-        />
-      ))
+      posts.length === 0 && (
+        <p class="text-center text-zinc-500 dark:text-zinc-500 py-12">
+          No hay artículos todavía. ¡Vuelve pronto!
+        </p>
+      )
     }
-  </ul>
+  </div>
 </AppLayout>

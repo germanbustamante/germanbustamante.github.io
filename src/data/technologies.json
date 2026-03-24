@@ -1,146 +1,62 @@
 {
-  "Android Development": [
-    {
-      "text": "Java",
-      "logo": "mdi:language-java"
-    },
-    {
-      "text": "Kotlin",
-      "logo": "mdi:language-kotlin"
-    },
-    {
-      "text": "Android SDK",
-      "logo": "mdi:android"
-    },
-    {
-      "text": "Jetpack Compose",
-      "logo": "mdi:android-studio"
-    },
-    {
-      "text": "Firebase",
-      "logo": "mdi:firebase"
-    },
-    {
-      "text": "Room Database",
-      "logo": "mdi:database"
-    },
-    {
-      "text": "Retrofit",
-      "logo": "mdi:api"
-    },
-    {
-      "text": "LiveData",
-      "logo": "mdi:refresh"
-    },
-    {
-      "text": "Dagger",
-      "logo": "mdi:code-braces"
-    },
-    {
-      "text": "Hilt",
-      "logo": "mdi:code-braces"
-    },
-    {
-      "text": "Koin",
-      "logo": "mdi:code-braces"
-    },
-    {
-      "text": "Google SDK (Mapas, Notificaciones, etc.)",
-      "logo": "mdi:google-maps"
-    },
-    {
-      "text": "Testing (JUnit, Espresso)",
-      "logo": "mdi:test-tube"
-    }
+  "Languages": [
+    { "text": "Kotlin", "logo": "mdi:language-kotlin" },
+    { "text": "Swift", "logo": "mdi:language-swift" }
   ],
-  "App Architecture": [
-    {
-      "text": "Clean Architecture",
-      "logo": "mdi:layers-outline"
-    },
-    {
-      "text": "MVVM (Model-View-ViewModel)",
-      "logo": "mdi:view-dashboard"
-    },
-    {
-      "text": "MVP (Model-View-Presenter)",
-      "logo": "mdi:view-dashboard"
-    },
-    {
-      "text": "MVC (Model-View-Controller)",
-      "logo": "mdi:view-dashboard"
-    },
-    {
-      "text": "Modular Architecture",
-      "logo": "mdi:package-variant"
-    },
-    {
-      "text": "Multi-Module Architecture",
-      "logo": "mdi:folder-multiple"
-    },
-    {
-      "text": "Layered Architecture",
-      "logo": "mdi:layers"
-    }
+  "UI Frameworks": [
+    { "text": "Jetpack Compose", "logo": "mdi:android-studio" },
+    { "text": "SwiftUI", "logo": "mdi:apple" },
+    { "text": "Material Design 3", "logo": "mdi:material-design" }
   ],
-  "Development Tools": [
-    {
-      "text": "Android Studio",
-      "logo": "mdi:android-studio"
-    },
-    {
-      "text": "Git",
-      "logo": "mdi:git"
-    },
-    {
-      "text": "Gradle",
-      "logo": "mdi:graph"
-    },
-    {
-      "text": "Postman",
-      "logo": "mdi:api"
-    }
+  "Architecture": [
+    { "text": "Multi-module Clean Architecture", "logo": "mdi:layers-outline" },
+    { "text": "MVVM / MVI", "logo": "mdi:view-dashboard" },
+    { "text": "Repository & Use Case Patterns", "logo": "mdi:folder-multiple" }
   ],
-  "Cloud and Backend Services": [
-    {
-      "text": "Firebase",
-      "logo": "mdi:firebase"
-    }
+  "Async & Reactive": [
+    { "text": "Kotlin Coroutines & Flow", "logo": "mdi:sync" },
+    { "text": "Combine", "logo": "mdi:apple" }
   ],
-  "Design Patterns": [
-    {
-      "text": "MVC",
-      "logo": "mdi:vector-square"
-    },
-    {
-      "text": "MVP",
-      "logo": "mdi:vector-square"
-    },
-    {
-      "text": "MVVM",
-      "logo": "mdi:vector-square"
-    },
-    {
-      "text": "Singleton",
-      "logo": "mdi:vector-square"
-    }
+  "Dependency Injection": [
+    { "text": "Hilt", "logo": "mdi:code-braces" },
+    { "text": "Koin", "logo": "mdi:code-braces" }
   ],
-  "Other Software": [
-    {
-      "text": "GitHub",
-      "logo": "mdi:github"
-    },
-    {
-      "text": ".NET",
-      "logo": "mdi:dot-net"
-    },
-    {
-      "text": "Xamarin",
-      "logo": "mdi:microsoft"
-    },
-    {
-      "text": "UWP",
-      "logo": "mdi:microsoft"
-    }
+  "Cross-Platform": [
+    { "text": "Kotlin Multiplatform (KMP)", "logo": "mdi:language-kotlin" }
+  ],
+  "Functional": [
+    { "text": "Arrow-kt", "logo": "mdi:arrow-right-bold" }
+  ],
+  "Testing": [
+    { "text": "JUnit 5", "logo": "mdi:test-tube" },
+    { "text": "MockK", "logo": "mdi:test-tube" },
+    { "text": "Turbine", "logo": "mdi:test-tube" },
+    { "text": "Espresso", "logo": "mdi:test-tube" },
+    { "text": "JaCoCo", "logo": "mdi:chart-bar" },
+    { "text": "Detekt", "logo": "mdi:magnify-scan" }
+  ],
+  "CI/CD": [
+    { "text": "Bitrise", "logo": "mdi:rocket-launch" },
+    { "text": "GitLab CI/CD", "logo": "mdi:gitlab" },
+    { "text": "GitHub Actions", "logo": "mdi:github" },
+    { "text": "Fastlane", "logo": "mdi:fast-forward" }
+  ],
+  "Data & Networking": [
+    { "text": "Room", "logo": "mdi:database" },
+    { "text": "Retrofit", "logo": "mdi:api" },
+    { "text": "WebSocket (ActionCable)", "logo": "mdi:lan-connect" }
+  ],
+  "Media": [
+    { "text": "ExoPlayer / Media3", "logo": "mdi:play-circle" }
+  ],
+  "Backend Services": [
+    { "text": "Firebase", "logo": "mdi:firebase" },
+    { "text": "Stripe", "logo": "mdi:credit-card" },
+    { "text": "PayPal", "logo": "mdi:cash" }
+  ],
+  "Tools": [
+    { "text": "Android Studio", "logo": "mdi:android-studio" },
+    { "text": "Git", "logo": "mdi:git" },
+    { "text": "Gradle", "logo": "mdi:graph" }
   ]
 }

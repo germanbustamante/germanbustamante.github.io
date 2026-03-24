@@ -1,35 +1,30 @@
 import { defineConfig, sharpImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
+import sitemap from "@astrojs/sitemap";
 import { readFileSync } from "node:fs";
-import mdx from '@astrojs/mdx';
+import mdx from "@astrojs/mdx";
 import compressor from "astro-compressor";
 
-// https://astro.build/config test
 export default defineConfig({
-  integrations: [tailwind(), compressor(), mdx()],
+  integrations: [tailwind(), sitemap(), mdx(), compressor()],
   image: {
-    service: sharpImageService()
+    service: sharpImageService(),
   },
   site: "https://germanbustamante.github.io",
   vite: {
     plugins: [rawFonts([".ttf", ".woff"])],
     optimizeDeps: {
-      exclude: ["@resvg/resvg-js"]
-    }
+      exclude: ["@resvg/resvg-js"],
+    },
   },
   i18n: {
-    locales: ["en", "es", "fr", "de", "uk"],
+    locales: ["en", "es"],
     defaultLocale: "en",
-    fallback: {
-      fr: "en",
-      de: "en",
-      uk: "en"
-    },
-    routing : {
+    routing: {
       prefixDefaultLocale: true,
       fallbackType: "redirect",
-    }
-  }
+    },
+  },
 });
 
 // vite plugin to import fonts

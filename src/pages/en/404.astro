@@ -1,39 +1,25 @@
 ---
 import AppLayout from "@layouts/AppLayout.astro";
-const title = "Not found";
+const title = "Page Not Found";
 const description = "Sorry, the page you are looking for does not exist.";
 ---
 
-<style is:inline>
-  main,
-  header,
-  html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  main:not(.home) header
-  {
-    display: none;
-  }
-
-  nav, footer, .footer {
-    display: none;
-    opacity: 0;
-  }
-</style>
-
 <AppLayout title={title} description={description}>
-  <div class="flex flex-col items-center justify-center h-screen text-center text-zinc-300">
-
-    <h1 class="font-bold text-4xl mb-4 text-center">
-      404
+  <div
+    class="flex flex-col items-center justify-center min-h-[60vh] text-center pt-24"
+  >
+    <p class="text-accent font-mono text-lg mb-2">404</p>
+    <h1 class="font-bold text-3xl sm:text-4xl mb-4 text-zinc-900 dark:text-zinc-100">
+      Page Not Found
     </h1>
-    <p class="text-xl font-thin text-center">{description}</p>
-
-    <a class="px-4 py-2 mt-4 text-center bg-zinc-800 text-zinc-100 rounded-md cursor-pointer hover:bg-zinc-700 transition duration-200 ease-in-out" href="/">
-      Go back to home.
+    <p class="text-zinc-500 dark:text-zinc-400 mb-8 max-w-md">
+      {description}
+    </p>
+    <a
+      class="px-6 py-3 rounded-lg bg-accent text-white font-medium hover:bg-accent-dark transition-colors"
+      href="/en/"
+    >
+      Go back home
     </a>
   </div>
 </AppLayout>
