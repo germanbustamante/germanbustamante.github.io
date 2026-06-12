@@ -6,43 +6,39 @@ export const projectTranslationKeys = {
     "project.description":
       "Projects that showcase my expertise in Android architecture, Kotlin Multiplatform, and modern mobile development.",
 
-    // KMP Notes App
-    "project.kmp_notes.name": "KMP Notes App",
-    "project.kmp_notes.description":
-      "A cross-platform note-taking app built with Kotlin Multiplatform sharing business logic between Android (Jetpack Compose) and iOS (SwiftUI). Demonstrates shared networking, local database, and dependency injection across platforms.",
-    "project.kmp_notes.highlight1":
-      "Shared KMP module with Ktor + SQLDelight",
-    "project.kmp_notes.highlight2":
-      "Platform-specific UI (Compose + SwiftUI)",
-    "project.kmp_notes.highlight3": "Koin for cross-platform DI",
-    "project.kmp_notes.highlight4":
-      "Clean Architecture with shared domain layer",
-    "project.kmp_notes.highlight5": "Unit tests on shared module",
-
-    // MovieArch
-    "project.moviearch.name": "MovieArch",
-    "project.moviearch.description":
-      "A movie catalog app showcasing production-grade multi-module Clean Architecture with Jetpack Compose. Features modularized layers, comprehensive testing, and CI/CD pipeline.",
-    "project.moviearch.highlight1":
-      "8+ Gradle modules with Convention Plugins",
-    "project.moviearch.highlight2":
-      "MVVM + MVI hybrid with Arrow-kt error handling",
-    "project.moviearch.highlight3": "Offline-first with Room + Retrofit",
-    "project.moviearch.highlight4":
-      "Full test coverage: Unit (JUnit5/MockK), UI (Espresso), Integration",
-    "project.moviearch.highlight5": "Detekt + JaCoCo integrated",
-    "project.moviearch.highlight6": "GitHub Actions CI/CD",
+    // Fuelio
+    "project.fuelio.name": "Fuelio",
+    "project.fuelio.description":
+      "A production Kotlin Multiplatform app sharing domain, data and UI logic between Android and iOS via Compose Multiplatform. Real-time fuel-price comparison with geolocation, reactive filtering and a custom design system.",
+    "project.fuelio.highlight1":
+      "True multiplatform: single codebase for Android + iOS (Compose Multiplatform)",
+    "project.fuelio.highlight2":
+      "Layered Clean Architecture across 3 KMP modules (domain / data / app)",
+    "project.fuelio.highlight3":
+      "Per-platform Ktor engines via expect/actual (OkHttp on Android, Darwin on iOS)",
+    "project.fuelio.highlight4":
+      "Annotation-based Koin DI with platform-specific init (SwiftUI bridge on iOS)",
+    "project.fuelio.highlight5":
+      "Custom design system: 14 tokenized Material 3 components, accessibility-first",
+    "project.fuelio.highlight6":
+      "Multiplatform tests with Mokkery + Turbine and the Mother pattern",
 
     // Ringtone Manager
     "project.ringtone.name": "Ringtone Manager",
     "project.ringtone.description":
-      "A modern ringtone management app with Clean Architecture. Features audio playback with Media3/ExoPlayer, Firebase backend, and Material Design 3 UI.",
-    "project.ringtone.highlight1": "Clean Architecture with MVVM",
-    "project.ringtone.highlight2": "Media3/ExoPlayer for audio playback",
-    "project.ringtone.highlight3": "Firebase (Auth, Firestore, Storage)",
+      "A production-grade Android app built as an architecture showcase: 10-module Clean Architecture with dependency rules enforced at compile time, offline-first data and a fully gated CI/CD pipeline.",
+    "project.ringtone.highlight1":
+      "10-module Clean Architecture; dependency rules enforced via module-graph-assert",
+    "project.ringtone.highlight2":
+      "Functional error handling with Arrow Either over sealed domain errors",
+    "project.ringtone.highlight3":
+      "Offline-first: Room as single source of truth, async Firestore sync + cursor pagination",
     "project.ringtone.highlight4":
-      "Jetpack Compose with Material Design 3",
-    "project.ringtone.highlight5": "Hilt DI",
+      "Navigation 3 with independent multi-stack back stacks per tab",
+    "project.ringtone.highlight5":
+      "Koin DI graph verified by a unit test; Kover ≥80% gate, Detekt, Dependency Guard",
+    "project.ringtone.highlight6":
+      "6 ADRs + GitHub Actions CI (tests, coverage, Paparazzi screenshots, lint, release)",
 
     // InaDraft
     "project.inadraft.name": "InaDraft",
@@ -58,46 +54,39 @@ export const projectTranslationKeys = {
     "project.description":
       "Proyectos que demuestran mi experiencia en arquitectura Android, Kotlin Multiplatform y desarrollo móvil moderno.",
 
-    // KMP Notes App
-    "project.kmp_notes.name": "KMP Notes App",
-    "project.kmp_notes.description":
-      "Una app de notas multiplataforma construida con Kotlin Multiplatform compartiendo lógica de negocio entre Android (Jetpack Compose) e iOS (SwiftUI). Demuestra networking compartido, base de datos local e inyección de dependencias entre plataformas.",
-    "project.kmp_notes.highlight1":
-      "Módulo KMP compartido con Ktor + SQLDelight",
-    "project.kmp_notes.highlight2":
-      "UI específica por plataforma (Compose + SwiftUI)",
-    "project.kmp_notes.highlight3": "Koin para DI multiplataforma",
-    "project.kmp_notes.highlight4":
-      "Clean Architecture con capa de dominio compartida",
-    "project.kmp_notes.highlight5":
-      "Tests unitarios en módulo compartido",
-
-    // MovieArch
-    "project.moviearch.name": "MovieArch",
-    "project.moviearch.description":
-      "Una app de catálogo de películas que muestra Clean Architecture multi-módulo de nivel producción con Jetpack Compose. Incluye capas modularizadas, testing integral y pipeline CI/CD.",
-    "project.moviearch.highlight1":
-      "8+ módulos Gradle con Convention Plugins",
-    "project.moviearch.highlight2":
-      "Híbrido MVVM + MVI con manejo de errores Arrow-kt",
-    "project.moviearch.highlight3":
-      "Offline-first con Room + Retrofit",
-    "project.moviearch.highlight4":
-      "Cobertura de tests completa: Unit (JUnit5/MockK), UI (Espresso), Integration",
-    "project.moviearch.highlight5": "Detekt + JaCoCo integrados",
-    "project.moviearch.highlight6": "CI/CD con GitHub Actions",
+    // Fuelio
+    "project.fuelio.name": "Fuelio",
+    "project.fuelio.description":
+      "App de producción en Kotlin Multiplatform que comparte la lógica de dominio, datos y UI entre Android e iOS con Compose Multiplatform. Comparativa de precios de combustible en tiempo real con geolocalización, filtrado reactivo y design system propio.",
+    "project.fuelio.highlight1":
+      "Multiplataforma real: un solo código para Android + iOS (Compose Multiplatform)",
+    "project.fuelio.highlight2":
+      "Clean Architecture por capas en 3 módulos KMP (domain / data / app)",
+    "project.fuelio.highlight3":
+      "Motores Ktor por plataforma con expect/actual (OkHttp en Android, Darwin en iOS)",
+    "project.fuelio.highlight4":
+      "Koin con DI por anotaciones e init específico por plataforma (bridge SwiftUI en iOS)",
+    "project.fuelio.highlight5":
+      "Design system propio: 14 componentes Material 3 tokenizados, accessibility-first",
+    "project.fuelio.highlight6":
+      "Tests multiplataforma con Mokkery + Turbine y patrón Mother",
 
     // Ringtone Manager
     "project.ringtone.name": "Ringtone Manager",
     "project.ringtone.description":
-      "Una app moderna de gestión de tonos con Clean Architecture. Incluye reproducción de audio con Media3/ExoPlayer, backend Firebase y UI Material Design 3.",
-    "project.ringtone.highlight1": "Clean Architecture con MVVM",
+      "App Android de nivel producción concebida como escaparate de arquitectura: Clean Architecture de 10 módulos con reglas de dependencia verificadas en compilación, datos offline-first y pipeline CI/CD con gates completos.",
+    "project.ringtone.highlight1":
+      "Clean Architecture de 10 módulos; reglas de dependencia verificadas con module-graph-assert",
     "project.ringtone.highlight2":
-      "Media3/ExoPlayer para reproducción de audio",
-    "project.ringtone.highlight3": "Firebase (Auth, Firestore, Storage)",
+      "Manejo funcional de errores con Arrow Either sobre errores de dominio sellados",
+    "project.ringtone.highlight3":
+      "Offline-first: Room como única fuente de verdad, sync asíncrono con Firestore + paginación por cursor",
     "project.ringtone.highlight4":
-      "Jetpack Compose con Material Design 3",
-    "project.ringtone.highlight5": "Hilt DI",
+      "Navigation 3 con back stacks multi-pila independientes por pestaña",
+    "project.ringtone.highlight5":
+      "Grafo de DI de Koin verificado por test unitario; gate de Kover ≥80%, Detekt, Dependency Guard",
+    "project.ringtone.highlight6":
+      "6 ADRs + CI en GitHub Actions (tests, cobertura, screenshots Paparazzi, lint, release)",
 
     // InaDraft
     "project.inadraft.name": "InaDraft",
@@ -112,9 +101,7 @@ export const projectTranslationKeys = {
 
 type TranslationKey = keyof (typeof projectTranslationKeys)[typeof defaultLang];
 
-export function useTranslations(
-  lang: keyof typeof projectTranslationKeys,
-) {
+export function useTranslations(lang: keyof typeof projectTranslationKeys) {
   return function t(key: string) {
     return (
       projectTranslationKeys[lang][key as TranslationKey] ||

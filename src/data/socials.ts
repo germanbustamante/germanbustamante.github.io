@@ -7,7 +7,8 @@ export const linkedinUrl = "https://www.linkedin.com/in/germandebustamante/";
 
 // CV: Replace with your Google Drive (or other) direct download link
 // Google Drive format: https://drive.google.com/uc?export=download&id=YOUR_FILE_ID
-export const cvUrl = "https://drive.google.com/uc?export=download&id=1xDqlNJd8D33KiZ9lGTQig7UBTtjrLbon";
+export const cvUrl =
+  "https://drive.google.com/uc?export=download&id=1xDqlNJd8D33KiZ9lGTQig7UBTtjrLbon";
 
 export const defaultMeta = {
   title: "Germán Bustamante — Senior Android Architect | Kotlin & KMP",

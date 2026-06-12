@@ -26,7 +26,7 @@ export const homeTranslationKeys = {
     // About
     "home.aboutMe": "About Me",
     "home.aboutParagraph":
-      "I'm a Senior Android Architect with 4+ years of professional experience building and scaling mobile applications. I'm passionate about clean code, modular architectures, and cross-platform development with Kotlin Multiplatform. When I'm not coding, I'm sharing what I learn through technical writing.",
+      "I'm a Senior Android Architect with 4+ years of professional experience building and scaling mobile applications. I'm passionate about clean code, modular architectures, and cross-platform development with Kotlin Multiplatform — shipping open-source apps that share code across Android and iOS. When I'm not coding, I'm sharing what I learn through technical writing.",
     "home.technologies":
       "These are the technologies I work with on a daily basis:",
 
@@ -84,7 +84,7 @@ export const homeTranslationKeys = {
     // About
     "home.aboutMe": "Sobre Mí",
     "home.aboutParagraph":
-      "Soy Senior Android Architect con más de 4 años de experiencia profesional construyendo y escalando aplicaciones móviles. Me apasiona el código limpio, las arquitecturas modulares y el desarrollo multiplataforma con Kotlin Multiplatform. Cuando no estoy programando, comparto lo que aprendo a través de escritura técnica.",
+      "Soy Senior Android Architect con más de 4 años de experiencia profesional construyendo y escalando aplicaciones móviles. Me apasiona el código limpio, las arquitecturas modulares y el desarrollo multiplataforma con Kotlin Multiplatform — publicando apps open-source que comparten código entre Android e iOS. Cuando no estoy programando, comparto lo que aprendo a través de escritura técnica.",
     "home.technologies":
       "Estas son las tecnologías con las que trabajo a diario:",
 

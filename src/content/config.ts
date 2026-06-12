@@ -1,7 +1,7 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z } from "astro:content";
 
 const blogCollection = defineCollection({
-  type: 'content',
+  type: "content",
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   schema: ({ image }: { image: () => z.ZodType<any> }) =>
     z.object({
@@ -12,7 +12,7 @@ const blogCollection = defineCollection({
       pubDate: z.date(),
       updatedDate: z.date().optional(),
       tags: z.array(z.string()),
-      language : z.string()
+      language: z.string(),
     }),
 });
 

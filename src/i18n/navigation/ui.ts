@@ -17,11 +17,10 @@ export const navigationTranslationKeys = {
   },
 };
 
-type TranslationKey = keyof (typeof navigationTranslationKeys)[typeof defaultLang];
+type TranslationKey =
+  keyof (typeof navigationTranslationKeys)[typeof defaultLang];
 
-export function useTranslations(
-  lang: keyof typeof navigationTranslationKeys,
-) {
+export function useTranslations(lang: keyof typeof navigationTranslationKeys) {
   return function t(key: string) {
     return (
       navigationTranslationKeys[lang][key as TranslationKey] ||

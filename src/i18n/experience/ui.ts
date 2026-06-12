@@ -61,11 +61,10 @@ export const experienceTranslationKeys = {
   },
 };
 
-type TranslationKey = keyof (typeof experienceTranslationKeys)[typeof defaultLang];
+type TranslationKey =
+  keyof (typeof experienceTranslationKeys)[typeof defaultLang];
 
-export function useTranslations(
-  lang: keyof typeof experienceTranslationKeys,
-) {
+export function useTranslations(lang: keyof typeof experienceTranslationKeys) {
   return function t(key: string) {
     return (
       experienceTranslationKeys[lang][key as TranslationKey] ||

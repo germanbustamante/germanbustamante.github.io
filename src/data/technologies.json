@@ -5,13 +5,16 @@
   ],
   "UI Frameworks": [
     { "text": "Jetpack Compose", "logo": "mdi:android-studio" },
+    { "text": "Navigation 3", "logo": "mdi:navigation-variant" },
     { "text": "SwiftUI", "logo": "mdi:apple" },
     { "text": "Material Design 3", "logo": "mdi:material-design" }
   ],
   "Architecture": [
     { "text": "Multi-module Clean Architecture", "logo": "mdi:layers-outline" },
     { "text": "MVVM / MVI", "logo": "mdi:view-dashboard" },
-    { "text": "Repository & Use Case Patterns", "logo": "mdi:folder-multiple" }
+    { "text": "Repository & Use Case Patterns", "logo": "mdi:folder-multiple" },
+    { "text": "Module Graph Enforcement", "logo": "mdi:graph-outline" },
+    { "text": "Architecture Decision Records (ADR)", "logo": "mdi:file-document-outline" }
   ],
   "Async & Reactive": [
     { "text": "Kotlin Coroutines & Flow", "logo": "mdi:sync" },
@@ -22,18 +25,25 @@
     { "text": "Koin", "logo": "mdi:code-braces" }
   ],
   "Cross-Platform": [
-    { "text": "Kotlin Multiplatform (KMP)", "logo": "mdi:language-kotlin" }
+    { "text": "Kotlin Multiplatform (KMP)", "logo": "mdi:language-kotlin" },
+    { "text": "Compose Multiplatform", "logo": "mdi:cellphone-link" },
+    { "text": "expect / actual", "logo": "mdi:swap-horizontal" },
+    { "text": "KMP → iOS framework export", "logo": "mdi:apple" }
   ],
   "Functional": [
     { "text": "Arrow-kt", "logo": "mdi:arrow-right-bold" }
   ],
-  "Testing": [
+  "Testing & Quality": [
     { "text": "JUnit 5", "logo": "mdi:test-tube" },
     { "text": "MockK", "logo": "mdi:test-tube" },
+    { "text": "Mokkery", "logo": "mdi:test-tube" },
     { "text": "Turbine", "logo": "mdi:test-tube" },
+    { "text": "Paparazzi", "logo": "mdi:camera-outline" },
     { "text": "Espresso", "logo": "mdi:test-tube" },
+    { "text": "Kover", "logo": "mdi:chart-bar" },
     { "text": "JaCoCo", "logo": "mdi:chart-bar" },
-    { "text": "Detekt", "logo": "mdi:magnify-scan" }
+    { "text": "Detekt", "logo": "mdi:magnify-scan" },
+    { "text": "Dependency Guard", "logo": "mdi:shield-check-outline" }
   ],
   "CI/CD": [
     { "text": "Bitrise", "logo": "mdi:rocket-launch" },

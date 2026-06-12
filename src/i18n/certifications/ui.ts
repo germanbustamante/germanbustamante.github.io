@@ -15,8 +15,7 @@ export const certificationsTranslationKeys = {
       "Advanced Compose: custom components, performance optimization, state management.",
   },
   es: {
-    "certifications.arch.name":
-      "Arquitectura de Software, Testing y Calidad",
+    "certifications.arch.name": "Arquitectura de Software, Testing y Calidad",
     "certifications.arch.issuer": "DevExperto (Antonio Leiva)",
     "certifications.arch.date": "Junio 2023",
     "certifications.arch.description":
@@ -30,7 +29,8 @@ export const certificationsTranslationKeys = {
   },
 };
 
-type TranslationKey = keyof (typeof certificationsTranslationKeys)[typeof defaultLang];
+type TranslationKey =
+  keyof (typeof certificationsTranslationKeys)[typeof defaultLang];
 
 export function useTranslations(
   lang: keyof typeof certificationsTranslationKeys,
