@@ -1,17 +1,23 @@
 ---
+import { Icon } from "astro-icon/components";
+
 interface Props {
   text: string;
   logo?: string;
   key?: string;
 }
 
-const { text, key } = Astro.props;
+const { text, logo, key } = Astro.props;
 ---
 
 <li
   class="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent transition-colors duration-300 px-3 py-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/50 dark:border-zinc-800 hover:border-accent/30 dark:hover:border-accent/30"
   key={key}
 >
-  <span class="w-1.5 h-1.5 rounded-full bg-accent/60 flex-shrink-0"></span>
+  {logo ? (
+    <Icon name={logo} class="w-4 h-4 flex-shrink-0 text-accent/60" />
+  ) : (
+    <span class="w-1.5 h-1.5 rounded-full bg-accent/60 flex-shrink-0"></span>
+  )}
   <span class="truncate">{text}</span>
 </li>

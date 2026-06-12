@@ -2,7 +2,7 @@
 title: "Room 3.0: A New Era for Android Database Development"
 description: "Room 3.0 drops SupportSQLite, embraces coroutines-first design, and goes fully multiplatform. Here is what changes, why it matters, and how to start migrating."
 pubDate: 2026-03-29
-hero: "~/assets/heros/room_3_modernizing_android_database.png"
+hero: "~/assets/heros/koin_and_kotlin.png"
 heroAlt: "Room 3.0 database architecture with Kotlin Multiplatform targets"
 tags: ["Android", "Room", "Kotlin", "KMP", "Database", "Jetpack"]
 language: "en"

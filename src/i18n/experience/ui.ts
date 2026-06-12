@@ -22,13 +22,11 @@ export const experienceTranslationKeys = {
     "experience.alten.location": "Seville, Spain",
     "experience.alten.type": "On-site",
     "experience.alten.bullet1":
-      "Developed core shared libraries for Inditex ecosystem (ZaraHome) used across multiple group apps serving millions of users, implementing reusable UI components and data layers",
+      "Contributed to the ZaraHome Android app (Inditex group), working on feature development and bug fixing within an established team and codebase",
     "experience.alten.bullet2":
-      "Built CI/CD infrastructure with Bitrise (15 workflows) and Fastlane automation, reducing release errors by 85%",
+      "First exposure to professional CI/CD practices using Jenkins: learned pipeline configuration, build automation, and the full SDLC in a production environment",
     "experience.alten.bullet3":
-      "Implemented real-time features: WebSocket chat (ActionCable), multi-gateway payments (Stripe/PayPal), Zoom SDK integration",
-    "experience.alten.bullet4":
-      "Mentored team of 7 developers: designed structured onboarding reducing time-to-productivity by 50%, established coding standards and technical documentation",
+      "Gained hands-on experience with Agile workflows, code review processes, and contributing to a large-scale commercial Android project as a junior developer",
   },
   es: {
     "experience.ifeel.role": "Android Architect",
@@ -51,13 +49,11 @@ export const experienceTranslationKeys = {
     "experience.alten.location": "Sevilla, España",
     "experience.alten.type": "Presencial",
     "experience.alten.bullet1":
-      "Desarrollé librerías compartidas core para el ecosistema Inditex (ZaraHome) usadas en múltiples apps del grupo sirviendo a millones de usuarios, implementando componentes UI reutilizables y capas de datos",
+      "Contribuí al desarrollo de la app Android de ZaraHome (grupo Inditex), trabajando en nuevas funcionalidades y resolución de bugs dentro de un equipo y codebase ya establecidos",
     "experience.alten.bullet2":
-      "Construí infraestructura CI/CD con Bitrise (15 workflows) y automatización con Fastlane, reduciendo errores en releases en un 85%",
+      "Primera experiencia con CI/CD profesional usando Jenkins: aprendí configuración de pipelines, automatización de builds y el ciclo completo de SDLC en un entorno de producción",
     "experience.alten.bullet3":
-      "Implementé funcionalidades en tiempo real: chat WebSocket (ActionCable), pagos multi-pasarela (Stripe/PayPal), integración Zoom SDK",
-    "experience.alten.bullet4":
-      "Mentoricé equipo de 7 desarrolladores: diseñé onboarding estructurado reduciendo el tiempo hasta productividad en un 50%, establecí estándares de código y documentación técnica",
+      "Adquirí experiencia práctica con flujos de trabajo Agile, procesos de code review y contribución a un proyecto Android comercial a gran escala como desarrollador junior",
   },
 };
 

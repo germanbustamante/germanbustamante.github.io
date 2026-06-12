@@ -4,9 +4,10 @@ import sitemap from "@astrojs/sitemap";
 import { readFileSync } from "node:fs";
 import mdx from "@astrojs/mdx";
 import compressor from "astro-compressor";
+import icon from "astro-icon";
 
 export default defineConfig({
-  integrations: [tailwind(), sitemap(), mdx(), compressor()],
+  integrations: [tailwind(), sitemap(), mdx(), compressor(), icon()],
   image: {
     service: sharpImageService(),
   },
