@@ -47,6 +47,21 @@ const jsonLd = {
     "Clean Architecture",
   ],
 };
+
+// A page is an article (blog post or case study) when it's given an explicit pubDate — the
+// index/section pages never pass one and fall back to `new Date()` only for the generic <meta
+// name="date">, so `pubDate` itself (not the combined `date`) is the right signal here.
+const articleJsonLd = pubDate && {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  image: ogImageURL,
+  datePublished: pubDate.toISOString(),
+  dateModified: (lastmod ?? pubDate).toISOString(),
+  author: { "@type": "Person", name: "Germán De Bustamante Conde" },
+};
+const isArticle = Boolean(articleJsonLd);
 ---
 
 <!doctype html>
@@ -58,7 +73,7 @@ const jsonLd = {
     <link rel="canonical" href={canonicalURL} />
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={isArticle ? "article" : "website"} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -66,6 +81,16 @@ const jsonLd = {
     <meta property="og:site_name" content={author} />
     <meta property="og:image:alt" content={ogImage.alt} />
     <meta property="og:locale" content={lang === "es" ? "es_ES" : "en_US"} />
+    {
+      pubDate && (
+        <meta property="article:published_time" content={pubDate.toISOString()} />
+      )
+    }
+    {
+      isArticle && lastmod && (
+        <meta property="article:modified_time" content={lastmod.toISOString()} />
+      )
+    }
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://germanbustamante.github.io" />
     <meta name="twitter:creator" content={author} />
@@ -97,6 +122,14 @@ const jsonLd = {
     <meta name="date" content={date} />
     <meta name="keywords" content={tags} />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    {
+      articleJsonLd && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(articleJsonLd)}
+        />
+      )
+    }
 
     <!-- Dark mode: prevent FOUC -->
     <script is:inline>

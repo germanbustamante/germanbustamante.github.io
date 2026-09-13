@@ -18,15 +18,24 @@ interface Props {
   language: string;
 }
 
-const { title, description, image, imageAlt, pubDate, url, updatedDate, tags } =
-  Astro.props;
+const {
+  title,
+  description,
+  image,
+  imageAlt,
+  pubDate,
+  url,
+  updatedDate,
+  tags,
+  language,
+} = Astro.props;
 
 const ogImage = {
   src: `/image/${url}.png`,
   alt: title,
 };
 
-const fullPubDate = pubDate.toLocaleDateString("en", {
+const fullPubDate = pubDate.toLocaleDateString(language === "es" ? "es" : "en", {
   dateStyle: "full",
 });
 
