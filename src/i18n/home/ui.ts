@@ -27,7 +27,7 @@ export const homeTranslationKeys = {
     // About
     "home.aboutMe": "About Me",
     "home.aboutParagraph":
-      "As an Android Architect, I've led the architectural modernization of two production apps: a modular Clean Architecture, the move from XML to Jetpack Compose, a testing strategy built from zero, and a CI/CD pipeline the team can trust. Beyond Android, I build native iOS apps with SwiftUI and share a Kotlin core between both platforms with Kotlin Multiplatform. I've also worked across the stack: React Native and TypeScript, Next.js on the web, Java with Spring Boot, .NET and Kotlin with Ktor on the backend, and relational databases. I write about the decisions behind my work, including the ones that didn't go to plan.",
+      "As an Android Architect, I've led the architectural modernization of two production apps: a modular Clean Architecture, the move from XML to Jetpack Compose, a testing strategy built from zero, and a CI/CD pipeline the team can trust. Beyond Android, I build native iOS apps with SwiftUI and share a Kotlin core between both platforms with Kotlin Multiplatform. I've also worked across the stack: React Native and TypeScript, Next.js on the web, Java with Spring Boot, .NET and Kotlin with Ktor on the backend, and relational databases. I use Claude Code daily for agentic development, while architecture decisions, reviews and tests stay under my own judgment. I write about the decisions behind my work, including the ones that didn't go to plan.",
     "home.technologies": "Technologies I work with:",
 
     // Section Titles
@@ -87,7 +87,7 @@ export const homeTranslationKeys = {
     // About
     "home.aboutMe": "Sobre Mí",
     "home.aboutParagraph":
-      "Como Android Architect, he liderado la modernización arquitectónica de dos apps en producción: una Clean Architecture modular, el paso de XML a Jetpack Compose, una estrategia de testing construida desde cero y un pipeline de CI/CD en el que el equipo puede confiar. Más allá de Android, desarrollo apps iOS nativas con SwiftUI y comparto un núcleo en Kotlin entre ambas plataformas con Kotlin Multiplatform. También he trabajado en todo el stack: React Native y TypeScript, Next.js en web, Java con Spring Boot, .NET y Kotlin con Ktor en backend, y bases de datos relacionales. Escribo sobre las decisiones detrás de mi trabajo, incluidas las que no salieron como esperaba.",
+      "Como Android Architect, he liderado la modernización arquitectónica de dos apps en producción: una Clean Architecture modular, el paso de XML a Jetpack Compose, una estrategia de testing construida desde cero y un pipeline de CI/CD en el que el equipo puede confiar. Más allá de Android, desarrollo apps iOS nativas con SwiftUI y comparto un núcleo en Kotlin entre ambas plataformas con Kotlin Multiplatform. También he trabajado en todo el stack: React Native y TypeScript, Next.js en web, Java con Spring Boot, .NET y Kotlin con Ktor en backend, y bases de datos relacionales. Uso Claude Code a diario como herramienta de desarrollo agéntico, con las decisiones de arquitectura, las revisiones y los tests bajo mi criterio. Escribo sobre las decisiones detrás de mi trabajo, incluidas las que no salieron como esperaba.",
     "home.technologies": "Tecnologías con las que trabajo:",
 
     // Section Titles

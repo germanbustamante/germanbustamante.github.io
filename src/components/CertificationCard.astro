@@ -4,9 +4,12 @@ interface Props {
   issuer: string;
   date: string;
   description: string;
+  credentialUrl?: string;
+  credentialLabel?: string;
 }
 
-const { name, issuer, date, description } = Astro.props;
+const { name, issuer, date, description, credentialUrl, credentialLabel } =
+  Astro.props;
 ---
 
 <div
@@ -38,6 +41,18 @@ const { name, issuer, date, description } = Astro.props;
       <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-2">
         {description}
       </p>
+      {
+        credentialUrl && (
+          <a
+            href={credentialUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block mt-2 text-sm font-medium text-accent hover:underline"
+          >
+            {credentialLabel} ↗
+          </a>
+        )
+      }
     </div>
   </div>
 </div>

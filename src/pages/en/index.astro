@@ -40,6 +40,8 @@ const posts = (await getCollection("blog"))
             issuer={tCert(cert.issuerKey)}
             date={tCert(cert.dateKey)}
             description={tCert(cert.descriptionKey)}
+            credentialUrl={cert.credentialUrl}
+            credentialLabel={tCert("certifications.credential")}
           />
         ))
       }

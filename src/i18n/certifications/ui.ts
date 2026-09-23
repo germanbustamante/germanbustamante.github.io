@@ -2,6 +2,13 @@ import { defaultLanguage as defaultLang } from "../home/ui";
 
 export const certificationsTranslationKeys = {
   en: {
+    "certifications.claudeCode.name": "Claude Code in Action",
+    "certifications.claudeCode.issuer": "Anthropic",
+    "certifications.claudeCode.date": "February 2026",
+    "certifications.claudeCode.description":
+      "Agentic coding with Claude Code: context management, custom commands, hooks, MCP servers and GitHub integration.",
+    "certifications.credential": "Show credential",
+
     "certifications.arch.name": "Software Architecture, Testing and Quality",
     "certifications.arch.issuer": "DevExperto (Antonio Leiva)",
     "certifications.arch.date": "June 2023",
@@ -15,6 +22,13 @@ export const certificationsTranslationKeys = {
       "Advanced Compose: custom components, performance optimization, state management.",
   },
   es: {
+    "certifications.claudeCode.name": "Claude Code in Action",
+    "certifications.claudeCode.issuer": "Anthropic",
+    "certifications.claudeCode.date": "Febrero 2026",
+    "certifications.claudeCode.description":
+      "Programación agéntica con Claude Code: gestión de contexto, comandos personalizados, hooks, servidores MCP e integración con GitHub.",
+    "certifications.credential": "Ver credencial",
+
     "certifications.arch.name": "Arquitectura de Software, Testing y Calidad",
     "certifications.arch.issuer": "DevExperto (Antonio Leiva)",
     "certifications.arch.date": "Junio 2023",
