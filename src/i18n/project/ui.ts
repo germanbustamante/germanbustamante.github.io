@@ -5,23 +5,24 @@ export const projectTranslationKeys = {
     "project.title": "Featured Projects",
     "project.description":
       "Projects that showcase my expertise in Android architecture, Kotlin Multiplatform, and modern mobile development.",
+    "project.caseStudy": "Read the case study",
 
     // Fuelio
     "project.fuelio.name": "Fuelio",
     "project.fuelio.description":
-      "A production Kotlin Multiplatform app sharing domain, data and UI logic between Android and iOS via Compose Multiplatform. Real-time fuel-price comparison with geolocation, reactive filtering and a custom design system.",
+      "A Kotlin Multiplatform gas-station finder sharing domain, data and presentation logic between Android and iOS, with fully native UI on each platform — Jetpack Compose and SwiftUI, not Compose Multiplatform. Real-time fuel-price comparison with geolocation, offline-first persistence and reactive filtering.",
     "project.fuelio.highlight1":
-      "True multiplatform: single codebase for Android + iOS (Compose Multiplatform)",
+      "Native UI on both platforms over a shared Kotlin presentation layer — migrated off Compose Multiplatform, documented in an ADR",
     "project.fuelio.highlight2":
-      "Layered Clean Architecture across 3 KMP modules (domain / data / app)",
+      "A presentation module with zero Compose dependencies, compiling as both an Android library and a Kotlin/Native framework for Xcode",
     "project.fuelio.highlight3":
-      "Per-platform Ktor engines via expect/actual (OkHttp on Android, Darwin on iOS)",
+      "Offline-first with Room: stale-while-revalidate emits cached data first, and a failed refresh never blanks the screen",
     "project.fuelio.highlight4":
-      "Annotation-based Koin DI with platform-specific init (SwiftUI bridge on iOS)",
+      "Kotlin↔Swift bridge via SKIE, KMP-NativeCoroutines and KMP-ObservableViewModel, replacing ~600 lines of hand-rolled interop",
     "project.fuelio.highlight5":
-      "Custom design system: 14 tokenized Material 3 components, accessibility-first",
+      "452 tests across the stack — 362 Kotlin, 64 Swift Testing, 26 XCUITest — plus committed Roborazzi screenshot goldens",
     "project.fuelio.highlight6":
-      "Multiplatform tests with Mokkery + Turbine and the Mother pattern",
+      "9 ADRs and a single-source-of-truth versioned release pipeline for signed Android and iOS builds",
 
     // Ringtone Manager
     "project.ringtone.name": "Ringtone Manager",
@@ -53,23 +54,24 @@ export const projectTranslationKeys = {
     "project.title": "Proyectos Destacados",
     "project.description":
       "Proyectos que demuestran mi experiencia en arquitectura Android, Kotlin Multiplatform y desarrollo móvil moderno.",
+    "project.caseStudy": "Lee el caso de estudio",
 
     // Fuelio
     "project.fuelio.name": "Fuelio",
     "project.fuelio.description":
-      "App de producción en Kotlin Multiplatform que comparte la lógica de dominio, datos y UI entre Android e iOS con Compose Multiplatform. Comparativa de precios de combustible en tiempo real con geolocalización, filtrado reactivo y design system propio.",
+      "Buscador de gasolineras en Kotlin Multiplatform que comparte lógica de dominio, datos y presentación entre Android e iOS, con UI totalmente nativa en cada plataforma — Jetpack Compose y SwiftUI, no Compose Multiplatform. Comparativa de precios en tiempo real con geolocalización, persistencia offline-first y filtrado reactivo.",
     "project.fuelio.highlight1":
-      "Multiplataforma real: un solo código para Android + iOS (Compose Multiplatform)",
+      "UI nativa en ambas plataformas sobre una capa de presentación compartida en Kotlin — migrada desde Compose Multiplatform, documentado en un ADR",
     "project.fuelio.highlight2":
-      "Clean Architecture por capas en 3 módulos KMP (domain / data / app)",
+      "Un módulo de presentación sin ninguna dependencia de Compose, que compila a la vez como librería Android y como framework Kotlin/Native para Xcode",
     "project.fuelio.highlight3":
-      "Motores Ktor por plataforma con expect/actual (OkHttp en Android, Darwin en iOS)",
+      "Offline-first con Room: stale-while-revalidate emite primero los datos en caché, y un refresh fallido nunca vacía la pantalla",
     "project.fuelio.highlight4":
-      "Koin con DI por anotaciones e init específico por plataforma (bridge SwiftUI en iOS)",
+      "Puente Kotlin↔Swift con SKIE, KMP-NativeCoroutines y KMP-ObservableViewModel, en sustitución de ~600 líneas de interop hecho a mano",
     "project.fuelio.highlight5":
-      "Design system propio: 14 componentes Material 3 tokenizados, accessibility-first",
+      "452 tests en toda la pila — 362 en Kotlin, 64 con Swift Testing, 26 XCUITest — más goldens de Roborazzi commiteados",
     "project.fuelio.highlight6":
-      "Tests multiplataforma con Mokkery + Turbine y patrón Mother",
+      "9 ADRs y un pipeline de release con versión de fuente única para builds firmados de Android e iOS",
 
     // Ringtone Manager
     "project.ringtone.name": "Ringtone Manager",

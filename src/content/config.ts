@@ -13,6 +13,10 @@ const blogCollection = defineCollection({
       updatedDate: z.date().optional(),
       tags: z.array(z.string()),
       language: z.string(),
+      // Set when a post is a project-specific case study (e.g. "fuelio") rather than a general
+      // technical article — lets a project card link to its own posts without a second collection
+      // to maintain.
+      project: z.string().optional(),
     }),
 });
 

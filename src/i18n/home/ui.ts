@@ -19,14 +19,14 @@ export const homeTranslationKeys = {
     "home.heroName": "Germán Bustamante",
     "home.heroTitle": "Senior Android Architect | Kotlin & KMP",
     "home.heroDescription":
-      "I design scalable mobile architectures for apps serving 100K+ users. Specialized in multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform — turning complex codebases into maintainable, high-quality systems.",
+      "I design scalable mobile architectures for apps serving 100K+ users. Specialized in multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform — turning complex codebases into maintainable, high-quality systems, with native UI on iOS via SwiftUI where the project calls for it.",
     "home.heroCTA1": "View my work",
     "home.heroCTA2": "Download CV",
 
     // About
     "home.aboutMe": "About Me",
     "home.aboutParagraph":
-      "I'm a Senior Android Architect with 4+ years of professional experience building and scaling mobile applications. I'm passionate about clean code, modular architectures, and cross-platform development with Kotlin Multiplatform — shipping open-source apps that share code across Android and iOS. When I'm not coding, I'm sharing what I learn through technical writing.",
+      "I'm a Senior Android Architect with 4+ years of professional experience building and scaling mobile applications. I'm passionate about clean code, modular architectures, and cross-platform development with Kotlin Multiplatform — shipping open-source apps that share a Kotlin core between Android and a fully native SwiftUI UI on iOS. When I'm not coding, I'm sharing what I learn through technical writing.",
     "home.technologies":
       "These are the technologies I work with on a daily basis:",
 
@@ -54,6 +54,7 @@ export const homeTranslationKeys = {
     "home.viewCode": "View Code",
     "home.comingSoon": "Coming Soon",
     "home.inDevelopment": "In Development",
+    "home.live": "Live",
 
     // Footer
     "home.copyright": "All rights reserved",
@@ -77,14 +78,14 @@ export const homeTranslationKeys = {
     "home.heroName": "Germán Bustamante",
     "home.heroTitle": "Senior Android Architect | Kotlin & KMP",
     "home.heroDescription":
-      "Diseño arquitecturas móviles escalables para apps con más de 100K usuarios activos. Especializado en Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform — transformando codebases complejas en sistemas mantenibles y de alta calidad.",
+      "Diseño arquitecturas móviles escalables para apps con más de 100K usuarios activos. Especializado en Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform — transformando codebases complejas en sistemas mantenibles y de alta calidad, con UI nativa en iOS con SwiftUI cuando el proyecto lo requiere.",
     "home.heroCTA1": "Ver mi trabajo",
     "home.heroCTA2": "Descargar CV",
 
     // About
     "home.aboutMe": "Sobre Mí",
     "home.aboutParagraph":
-      "Soy Senior Android Architect con más de 4 años de experiencia profesional construyendo y escalando aplicaciones móviles. Me apasiona el código limpio, las arquitecturas modulares y el desarrollo multiplataforma con Kotlin Multiplatform — publicando apps open-source que comparten código entre Android e iOS. Cuando no estoy programando, comparto lo que aprendo a través de escritura técnica.",
+      "Soy Senior Android Architect con más de 4 años de experiencia profesional construyendo y escalando aplicaciones móviles. Me apasiona el código limpio, las arquitecturas modulares y el desarrollo multiplataforma con Kotlin Multiplatform — publicando apps open-source que comparten un núcleo en Kotlin entre Android y una UI totalmente nativa en iOS con SwiftUI. Cuando no estoy programando, comparto lo que aprendo a través de escritura técnica.",
     "home.technologies":
       "Estas son las tecnologías con las que trabajo a diario:",
 
@@ -112,6 +113,7 @@ export const homeTranslationKeys = {
     "home.viewCode": "Ver Código",
     "home.comingSoon": "Próximamente",
     "home.inDevelopment": "En Desarrollo",
+    "home.live": "En producción",
 
     // Footer
     "home.copyright": "Todos los derechos reservados",

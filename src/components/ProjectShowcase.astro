@@ -3,6 +3,8 @@ import SectionHeading from "@components/SectionHeading.astro";
 import { projects } from "@data/projects";
 import { useTranslations } from "../i18n/home/utils";
 import { useTranslations as useProjTranslations } from "../i18n/project/ui";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 
 interface Props {
   lang: string;
@@ -11,6 +13,20 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang as "en" | "es");
 const tProj = useProjTranslations(lang as "en" | "es");
+
+const caseStudies = await getCollection(
+  "blog",
+  (entry) => entry.data.language === lang && Boolean(entry.data.project),
+);
+
+function caseStudiesFor(projectId: string) {
+  return caseStudies
+    .filter((entry) => entry.data.project === projectId)
+    .map((entry) => ({
+      title: entry.data.title,
+      href: "/blog/" + entry.slug + "/",
+    }));
+}
 ---
 
 <section id="projects" class="py-20 sm:py-28">
@@ -25,11 +41,34 @@ const tProj = useProjTranslations(lang as "en" | "es");
             class="group rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-surface-card overflow-hidden hover:border-accent/30 dark:hover:border-accent/30 transition-all duration-300 hover:shadow-lg hover:shadow-accent/5"
             data-animate
           >
-            {/* Gradient placeholder image */}
-            <div class="relative h-48 bg-gradient-to-br from-accent/20 via-accent/5 to-transparent flex items-center justify-center">
-              <span class="text-2xl font-bold text-accent/40">
-                {tProj(project.nameKey)}
-              </span>
+            {/* Screenshots when available, the same gradient placeholder otherwise */}
+            <div class="relative h-56 sm:h-64 bg-gradient-to-br from-accent/20 via-accent/5 to-transparent flex items-center justify-center overflow-hidden">
+              {project.screenshots ? (
+                <div class="flex h-full w-full divide-x divide-zinc-200 dark:divide-zinc-800">
+                  <div class="flex-1 flex items-center justify-center bg-zinc-50 dark:bg-zinc-900/40 p-2">
+                    <Image
+                      src={project.screenshots.android}
+                      alt={project.screenshots.alt}
+                      class="max-h-full w-auto object-contain rounded-md shadow-sm"
+                      width={360}
+                      height={780}
+                    />
+                  </div>
+                  <div class="flex-1 flex items-center justify-center bg-zinc-50 dark:bg-zinc-900/40 p-2">
+                    <Image
+                      src={project.screenshots.ios}
+                      alt={project.screenshots.alt}
+                      class="max-h-full w-auto object-contain rounded-md shadow-sm"
+                      width={360}
+                      height={780}
+                    />
+                  </div>
+                </div>
+              ) : (
+                <span class="text-2xl font-bold text-accent/40">
+                  {tProj(project.nameKey)}
+                </span>
+              )}
               {/* Status badge */}
               <div class="absolute top-3 right-3">
                 <span
@@ -39,13 +78,14 @@ const tProj = useProjTranslations(lang as "en" | "es");
                       "bg-zinc-100 dark:bg-zinc-800 text-zinc-500",
                     project.status === "in-development" &&
                       "bg-accent/10 text-accent",
-                    project.status === "live" && "bg-green-100 text-green-700",
+                    project.status === "live" &&
+                      "bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400",
                   ]}
                 >
                   {project.status === "coming-soon" && t("home.comingSoon")}
                   {project.status === "in-development" &&
                     t("home.inDevelopment")}
-                  {project.status === "live" && "Live"}
+                  {project.status === "live" && t("home.live")}
                 </span>
               </div>
             </div>
@@ -120,6 +160,19 @@ const tProj = useProjTranslations(lang as "en" | "es");
                   </span>
                 ))}
               </div>
+
+              {caseStudiesFor(project.id).length > 0 && (
+                <div class="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex flex-col gap-1.5">
+                  {caseStudiesFor(project.id).map((study) => (
+                    <a
+                      href={study.href}
+                      class="text-sm text-accent hover:underline inline-flex items-center gap-1"
+                    >
+                      {tProj("project.caseStudy")}: {study.title} &rarr;
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))

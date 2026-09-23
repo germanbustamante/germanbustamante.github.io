@@ -1,3 +1,7 @@
+import type { ImageMetadata } from "astro";
+import fuelioAndroid from "~/assets/projects/fuelio_android_list.png";
+import fuelioIos from "~/assets/projects/fuelio_ios_list.png";
+
 export interface Project {
   id: string;
   nameKey: string;
@@ -8,6 +12,11 @@ export interface Project {
   liveUrl?: string;
   status: "coming-soon" | "in-development" | "live";
   featured: boolean;
+  screenshots?: {
+    android: ImageMetadata;
+    ios: ImageMetadata;
+    alt: string;
+  };
 }
 
 export const projects: Project[] = [
@@ -25,19 +34,27 @@ export const projects: Project[] = [
     ],
     technologies: [
       "Kotlin Multiplatform",
-      "Compose Multiplatform",
-      "Android",
-      "iOS",
+      "Jetpack Compose",
+      "SwiftUI",
+      "Room",
       "Ktor",
       "Koin",
+      "DataStore",
+      "SKIE",
+      "Navigation 3",
       "Coroutines & Flow",
-      "Material Design 3",
+      "Roborazzi",
       "Mokkery",
       "Turbine",
     ],
-    githubUrl: "https://github.com/germanbustamante/Fuelio",
+    githubUrl: "https://github.com/germanbustamante/Fuelio-KMP",
     status: "live",
     featured: true,
+    screenshots: {
+      android: fuelioAndroid,
+      ios: fuelioIos,
+      alt: "Fuelio's gas station list screen on Android (Jetpack Compose) and iOS (SwiftUI)",
+    },
   },
   {
     id: "ringtone-manager",
