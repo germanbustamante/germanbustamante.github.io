@@ -7,9 +7,7 @@
     "build": "astro build",
     "format": "prettier -w '**/*.{js,jsx,cjs,ts,tsx,astro}'",
     "preview": "astro preview",
-    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
-    "test": "astro test",
-    "test:watch": "astro test --watch"
+    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives"
   },
   "devDependencies": {
     "@astrojs/sitemap": "3.2.1",

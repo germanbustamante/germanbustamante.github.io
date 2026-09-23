@@ -1,98 +1,46 @@
-# cojocarudavid.me
+# germanbustamante.github.io
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/cojocaru-david/cojocarudavid.me/ci.yml)
-![License](https://img.shields.io/github/license/cojocaru-david/cojocarudavid.me)
-![Version](https://img.shields.io/github/package-json/v/cojocaru-david/cojocarudavid.me)
-![Stars](https://img.shields.io/github/stars/cojocaru-david/cojocarudavid.me?style=social)
+Personal site of **Germán De Bustamante Conde** — Android Architect working across iOS, Kotlin
+Multiplatform and full-stack development.
 
-👋 Hi, I'm David, a 16yo coder from Romania 🚀 Crafting web wonders with JavaScript, PHP, and React. Linux lover automating tasks with Bash.
+**Live:** https://germanbustamante.github.io
 
-## 🚀 Project Overview
+It hosts my professional profile, featured projects and technical writing, in English and Spanish.
+The case studies are written from real incidents in my own open-source work — for example
+[Fuelio](https://github.com/germanbustamante/Fuelio-KMP), a Kotlin Multiplatform app with fully
+native UI on Android and iOS.
 
-cojocarudavid.me is a blazing fast personal website built with Astro.js and styled with Tailwind CSS. It showcases my projects, blog posts, and more.
+## Stack
 
-![Website Screenshot](.github/smartmockups_m1jn1m6x.jpg)
+- [Astro](https://astro.build) (static output) with Markdown/MDX content collections
+- Tailwind CSS, with light and dark themes
+- Built-in i18n routing (`/en/`, `/es/`)
+- Open Graph images generated at build time with Satori
+- Deployed to GitHub Pages by GitHub Actions on every push to `main`
 
-## 🌟 Features
+## Running locally
 
-- 🚀 **Fast and optimized** - Built for speed and performance.
-- 🎨 **Beautiful and customizable UI** - Tailwind CSS for easy customization.
-- 🔒 **Secure and reliable** - Follows best security practices.
-- 🔄 **Continuous integration and deployment** - Automated workflows with GitHub Actions.
+Requires Node.js 20+ and pnpm.
 
-## 🛠️ Technologies Used
+```sh
+pnpm install
+pnpm dev       # http://localhost:4321
+pnpm build     # static output in dist/
+pnpm preview   # serve the production build
+```
 
-- **Astro.js** - Static site generator.
-- **Tailwind CSS** - Utility-first CSS framework.
-- **TypeScript** - Typed JavaScript at Any Scale.
-- **JavaScript** - High-level, often just-in-time compiled, and multi-paradigm.
-- **CSS** - Cascading Style Sheets.
+## Project layout
 
-## 📚 Documentation
+```
+src/
+  content/blog/{en,es}/   Posts and case studies (Markdown)
+  data/                   Projects, experience, technologies, social links
+  i18n/                   UI strings per section, in English and Spanish
+  components/, layouts/   Astro components
+  pages/                  Routes (locale-prefixed)
+```
 
-### Prerequisites
+## Credits
 
-- Node.js and npm installed.
-- Git installed.
-
-### Setup
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/cojocaru-david/cojocarudavid.me.git
-   ```
-
-2. **Install dependencies:**
-
-   ```sh
-   cd cojocarudavid.me
-   npm install
-   ```
-
-3. **Run the development server:**
-
-   ```sh
-   npm run dev
-   ```
-
-### Usage
-
-- **Build for production:**
-
-  ```sh
-  npm run build
-  ```
-
-- **Deploy:**
-
-  ```sh
-  npm run deploy
-  ```
-
-### Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 💬 Contact
-
-Feel free to reach out to me at [contact@cojocarudavid.me](mailto:contact@cojocarudavid.me).
-
-## 🚀 Connect with Me
-
-- [LinkedIn](https://www.linkedin.com/in/cojocaru-david)
-- [Blog](https://cojocarudavid.me/blog)
-
-## 🌟 Show Your Support
-
-Give a ⭐️ if you like this project!
-
-## 🙏 Acknowledgments
-
-- [Astro.js](https://astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [GitHub Actions](https://github.com/features/actions)
+Originally based on [David Cojocaru's](https://github.com/cojocaru-david) MIT-licensed Astro
+template, since heavily rewritten. Licensed under the [MIT License](LICENSE).
