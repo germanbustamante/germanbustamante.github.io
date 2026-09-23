@@ -1,7 +1,7 @@
 ---
 title: "Exporting KMP Modules as Swift Packages for iOS"
 description: "Learn how to distribute your Kotlin Multiplatform modules as Swift Package Manager dependencies, from XCFramework generation to Package.swift setup."
-pubDate: 2026-03-29
+pubDate: 2026-04-15
 hero: "~/assets/heros/kmp_spm_export.png"
 heroAlt: "Kotlin Multiplatform logo with Swift Package Manager icon"
 tags: ["Kotlin", "KMP", "Swift", "SPM", "iOS", "XCFramework"]

@@ -1,7 +1,7 @@
 ---
 title: "Migrating KMP from CocoaPods to Swift Package Manager"
 description: "A step-by-step guide to migrating your Kotlin Multiplatform project from CocoaPods to SwiftPM, covering build scripts, Xcode setup, and cleanup."
-pubDate: 2026-03-29
+pubDate: 2026-04-06
 hero: "~/assets/heros/kmp_cocoapods_to_spm_migration.png"
 heroAlt: "Migration arrow from CocoaPods to Swift Package Manager"
 tags: ["Kotlin", "KMP", "CocoaPods", "SPM", "iOS", "Migration"]

@@ -1,7 +1,7 @@
 ---
 title: "Detecta dependencias Koin que faltan antes de llegar a producción"
 description: "Cómo usar la API verify() de Koin para analizar estáticamente tu grafo de DI en tiempo de test y eliminar clases enteras de crashes en runtime."
-pubDate: 2026-06-12
+pubDate: 2026-07-08
 hero: "~/assets/heros/koin_dependency.png"
 heroAlt: "Logos de Koin y Kotlin"
 tags: ["Android", "Koin", "DI", "Testing", "Architecture"]

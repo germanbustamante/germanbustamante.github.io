@@ -1,7 +1,7 @@
 ---
 title: "Guard Your Release Classpath from Silent Dependency Changes"
 description: "How Dropbox's dependency-guard plugin snapshots your transitive dependency tree and turns invisible supply-chain changes into explicit, reviewable CI failures."
-pubDate: 2026-06-12
+pubDate: 2026-06-24
 hero: "~/assets/heros/android_dependency_transitive.png"
 heroAlt: "Android build tools"
 tags: ["Android", "Gradle", "Dependencies", "CI", "Security"]

@@ -1,7 +1,7 @@
 ---
 title: "Catch Missing Koin Dependencies Before Runtime"
 description: "How to use Koin's verify() API to statically check your DI graph at test time and eliminate entire classes of runtime crashes."
-pubDate: 2026-06-12
+pubDate: 2026-07-08
 hero: "~/assets/heros/koin_dependency.png"
 heroAlt: "Koin and Kotlin logos"
 tags: ["Android", "Koin", "DI", "Testing", "Architecture"]

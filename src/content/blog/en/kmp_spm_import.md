@@ -1,7 +1,7 @@
 ---
 title: "Importing Swift Packages into KMP: An Experimental Guide"
 description: "Explore the new experimental SwiftPM import feature for Kotlin Multiplatform, enabling direct use of iOS SDKs like Firebase from your shared Kotlin code."
-pubDate: 2026-03-29
+pubDate: 2026-04-24
 hero: "~/assets/heros/kmp_spm_import.png"
 heroAlt: "Swift Package Manager dependencies flowing into Kotlin Multiplatform"
 tags: ["Kotlin", "KMP", "Swift", "SPM", "iOS", "Firebase"]

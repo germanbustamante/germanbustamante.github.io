@@ -1,7 +1,7 @@
 ---
 title: "Por Qué los Favoritos No Pueden Ser una Columna en Gasolineras"
 description: "Una caché offline-first que se reemplaza entera en cada refresh borra en silencio cualquier cosa que guardes junto a ella. El arreglo, y el trade-off que te obliga a mostrar."
-pubDate: 2026-09-13
+pubDate: 2026-09-20
 hero: "~/assets/projects/fuelio_android_favorites.png"
 heroAlt: "Pantalla de favoritos de Fuelio en Android, mostrando una estación marcada con su insignia de precio más barato"
 tags: ["Room", "Offline-first", "Android", "Kotlin Multiplatform", "SQL"]

@@ -1,7 +1,7 @@
 ---
 title: "Why Favorites Can't Be a Column on the Gas Station Table"
 description: "An offline-first cache that replaces itself wholesale on every refresh will silently delete anything you store alongside it. The fix, and the trade-off it forces you to surface."
-pubDate: 2026-09-13
+pubDate: 2026-09-20
 hero: "~/assets/projects/fuelio_android_favorites.png"
 heroAlt: "Fuelio's favorites screen on Android, showing a starred station with its cheapest-price badge"
 tags: ["Room", "Offline-first", "Android", "Kotlin Multiplatform", "SQL"]
