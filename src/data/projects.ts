@@ -87,7 +87,7 @@ export const projects: Project[] = [
       "Detekt",
     ],
     githubUrl: "https://github.com/germanbustamante/Ringtone-Manager",
-    status: "live",
+    status: "open-source",
     featured: true,
   },
   {
@@ -103,6 +103,6 @@ export const projects: Project[] = [
     technologies: ["Kotlin", "Android SDK", "Firebase", "Gradle"],
     githubUrl: "https://github.com/GermanBustamante/InaDraft",
     status: "in-development",
-    featured: true,
+    featured: false,
   },
 ];
