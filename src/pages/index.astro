@@ -1,3 +1,18 @@
 ---
-return Astro.redirect("/en/");
+// A relative, zero-delay redirect: Astro.redirect() in static output emits an absolute URL built
+// from `site` with a 2-second delay, which sent local previews to the live site.
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Germán Bustamante</title>
+    <meta http-equiv="refresh" content="0;url=/en/" />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={new URL("/en/", Astro.site)} />
+  </head>
+  <body>
+    <a href="/en/">Continue to germanbustamante.github.io/en/</a>
+  </body>
+</html>

@@ -7,7 +7,13 @@ import compressor from "astro-compressor";
 import icon from "astro-icon";
 
 export default defineConfig({
-  integrations: [tailwind(), sitemap(), mdx(), compressor(), icon()],
+  integrations: [
+    tailwind(),
+    sitemap({ filter: (page) => page !== "https://germanbustamante.github.io/" }),
+    mdx(),
+    compressor(),
+    icon(),
+  ],
   image: {
     service: sharpImageService(),
   },
@@ -23,6 +29,7 @@ export default defineConfig({
     defaultLocale: "en",
     routing: {
       prefixDefaultLocale: true,
+      redirectToDefaultLocale: false,
       fallbackType: "redirect",
     },
   },
