@@ -5,15 +5,13 @@ export const email = "germanbustamante.trabajo@gmail.com";
 export const githubUrl = "https://github.com/germanbustamante";
 export const linkedinUrl = "https://www.linkedin.com/in/germandebustamante/";
 
-// CV: Replace with your Google Drive (or other) direct download link
-// Google Drive format: https://drive.google.com/uc?export=download&id=YOUR_FILE_ID
 export const cvUrl =
-  "https://drive.google.com/uc?export=download&id=1xDqlNJd8D33KiZ9lGTQig7UBTtjrLbon";
+  "https://drive.google.com/uc?export=download&id=1Sz5_8S7xb5vkEGCbGYfpSn-mWwXcL1lc";
 
 export const defaultMeta = {
-  title: "Germán Bustamante — Senior Android Architect | Kotlin & KMP",
+  title: "Germán Bustamante — Android Architect | iOS & Kotlin Multiplatform",
   description:
-    "Senior Android Architect specializing in Kotlin and Kotlin Multiplatform. I design scalable mobile architectures for apps serving 100K+ users.",
+    "Android Architect with native iOS (SwiftUI) and Kotlin Multiplatform expertise, and full-stack experience. I design and modernize mobile architectures for production apps with 100K+ users.",
   keywords: [
     "germán bustamante",
     "android architect",
@@ -26,6 +24,6 @@ export const defaultMeta = {
   ],
   ogImage: {
     src: "/banner.png",
-    alt: "Germán Bustamante — Senior Android Architect",
+    alt: "Germán Bustamante — Android Architect",
   },
 };

@@ -10,25 +10,25 @@ export const homeTranslationKeys = {
   en: {
     // Meta
     "home.pageTitle":
-      "Germán Bustamante — Senior Android Architect | Kotlin & KMP",
+      "Germán Bustamante — Android Architect | iOS & Kotlin Multiplatform",
     "home.pageDescription":
-      "Senior Android Architect specializing in Kotlin and Kotlin Multiplatform. I design scalable mobile architectures for apps serving 100K+ users.",
+      "Android Architect with native iOS (SwiftUI) and Kotlin Multiplatform expertise, and full-stack experience. I design and modernize mobile architectures for production apps with 100K+ users.",
 
     // Hero
     "home.heroGreeting": "Hi, I'm",
     "home.heroName": "Germán Bustamante",
-    "home.heroTitle": "Senior Android Architect | Kotlin & KMP",
+    "home.heroTitle": "Android Architect",
+    "home.heroSubtitle": "iOS & Kotlin Multiplatform · Full-stack experience",
     "home.heroDescription":
-      "I design scalable mobile architectures for apps serving 100K+ users. Specialized in multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform — turning complex codebases into maintainable, high-quality systems, with native UI on iOS via SwiftUI where the project calls for it.",
+      "I design and modernize the architecture of production mobile apps used by 100K+ people — multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform with a fully native UI on each platform.",
     "home.heroCTA1": "View my work",
     "home.heroCTA2": "Download CV",
 
     // About
     "home.aboutMe": "About Me",
     "home.aboutParagraph":
-      "I'm a Senior Android Architect with 4+ years of professional experience building and scaling mobile applications. I'm passionate about clean code, modular architectures, and cross-platform development with Kotlin Multiplatform — shipping open-source apps that share a Kotlin core between Android and a fully native SwiftUI UI on iOS. When I'm not coding, I'm sharing what I learn through technical writing.",
-    "home.technologies":
-      "These are the technologies I work with on a daily basis:",
+      "As an Android Architect, I've led the architectural modernization of two production apps: a modular Clean Architecture, the move from XML to Jetpack Compose, a testing strategy built from zero, and a CI/CD pipeline the team can trust. Beyond Android, I build native iOS apps with SwiftUI and share a Kotlin core between both platforms with Kotlin Multiplatform. I've also worked across the stack: React Native and TypeScript, Next.js on the web, Java with Spring Boot, .NET and Kotlin with Ktor on the backend, and relational databases. I write about the decisions behind my work, including the ones that didn't go to plan.",
+    "home.technologies": "Technologies I work with:",
 
     // Section Titles
     "home.experienceTitle": "Professional Experience",
@@ -55,6 +55,7 @@ export const homeTranslationKeys = {
     "home.comingSoon": "Coming Soon",
     "home.inDevelopment": "In Development",
     "home.live": "Live",
+    "home.openSource": "Open source",
 
     // Footer
     "home.copyright": "All rights reserved",
@@ -69,25 +70,25 @@ export const homeTranslationKeys = {
   es: {
     // Meta
     "home.pageTitle":
-      "Germán Bustamante — Senior Android Architect | Kotlin & KMP",
+      "Germán Bustamante — Android Architect | iOS y Kotlin Multiplatform",
     "home.pageDescription":
-      "Senior Android Architect especializado en Kotlin y Kotlin Multiplatform. Diseño arquitecturas móviles escalables para apps con más de 100K usuarios.",
+      "Android Architect con experiencia en iOS nativo (SwiftUI), Kotlin Multiplatform y desarrollo full-stack. Diseño y modernizo la arquitectura de apps móviles en producción con más de 100K usuarios.",
 
     // Hero
     "home.heroGreeting": "Hola, soy",
     "home.heroName": "Germán Bustamante",
-    "home.heroTitle": "Senior Android Architect | Kotlin & KMP",
+    "home.heroTitle": "Android Architect",
+    "home.heroSubtitle": "iOS y Kotlin Multiplatform · Experiencia full-stack",
     "home.heroDescription":
-      "Diseño arquitecturas móviles escalables para apps con más de 100K usuarios activos. Especializado en Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform — transformando codebases complejas en sistemas mantenibles y de alta calidad, con UI nativa en iOS con SwiftUI cuando el proyecto lo requiere.",
+      "Diseño y modernizo la arquitectura de apps móviles en producción usadas por más de 100K personas — Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform con UI totalmente nativa en cada plataforma.",
     "home.heroCTA1": "Ver mi trabajo",
     "home.heroCTA2": "Descargar CV",
 
     // About
     "home.aboutMe": "Sobre Mí",
     "home.aboutParagraph":
-      "Soy Senior Android Architect con más de 4 años de experiencia profesional construyendo y escalando aplicaciones móviles. Me apasiona el código limpio, las arquitecturas modulares y el desarrollo multiplataforma con Kotlin Multiplatform — publicando apps open-source que comparten un núcleo en Kotlin entre Android y una UI totalmente nativa en iOS con SwiftUI. Cuando no estoy programando, comparto lo que aprendo a través de escritura técnica.",
-    "home.technologies":
-      "Estas son las tecnologías con las que trabajo a diario:",
+      "Como Android Architect, he liderado la modernización arquitectónica de dos apps en producción: una Clean Architecture modular, el paso de XML a Jetpack Compose, una estrategia de testing construida desde cero y un pipeline de CI/CD en el que el equipo puede confiar. Más allá de Android, desarrollo apps iOS nativas con SwiftUI y comparto un núcleo en Kotlin entre ambas plataformas con Kotlin Multiplatform. También he trabajado en todo el stack: React Native y TypeScript, Next.js en web, Java con Spring Boot, .NET y Kotlin con Ktor en backend, y bases de datos relacionales. Escribo sobre las decisiones detrás de mi trabajo, incluidas las que no salieron como esperaba.",
+    "home.technologies": "Tecnologías con las que trabajo:",
 
     // Section Titles
     "home.experienceTitle": "Experiencia Profesional",
@@ -114,6 +115,7 @@ export const homeTranslationKeys = {
     "home.comingSoon": "Próximamente",
     "home.inDevelopment": "En Desarrollo",
     "home.live": "En producción",
+    "home.openSource": "Código abierto",
 
     // Footer
     "home.copyright": "Todos los derechos reservados",

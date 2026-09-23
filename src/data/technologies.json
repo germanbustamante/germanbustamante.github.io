@@ -1,72 +1,91 @@
 {
   "Languages": [
     { "text": "Kotlin", "logo": "mdi:language-kotlin" },
-    { "text": "Swift", "logo": "mdi:language-swift" }
+    { "text": "Java", "logo": "mdi:language-java" },
+    { "text": "Swift", "logo": "mdi:language-swift" },
+    { "text": "TypeScript", "logo": "mdi:language-typescript" },
+    { "text": "JavaScript", "logo": "mdi:language-javascript" },
+    { "text": "C#", "logo": "mdi:language-csharp" },
+    { "text": "SQL", "logo": "mdi:database-search" }
   ],
-  "UI Frameworks": [
+  "Android": [
     { "text": "Jetpack Compose", "logo": "mdi:android-studio" },
+    { "text": "Material Design 3", "logo": "mdi:material-design" },
     { "text": "Navigation 3", "logo": "mdi:navigation-variant" },
+    { "text": "Coroutines & Flow", "logo": "mdi:sync" },
+    { "text": "Hilt", "logo": "mdi:code-braces" },
+    { "text": "Koin", "logo": "mdi:code-braces" },
+    { "text": "Room", "logo": "mdi:database" },
+    { "text": "DataStore", "logo": "mdi:database-cog" },
+    { "text": "Retrofit", "logo": "mdi:api" },
+    { "text": "Media3 / ExoPlayer", "logo": "mdi:play-circle" },
+    { "text": "Arrow-kt", "logo": "mdi:arrow-right-bold" },
+    { "text": "R8 / ProGuard", "logo": "mdi:package-variant-closed" }
+  ],
+  "iOS": [
     { "text": "SwiftUI", "logo": "mdi:apple" },
-    { "text": "Material Design 3", "logo": "mdi:material-design" }
+    { "text": "Combine", "logo": "mdi:apple-ios" },
+    { "text": "Swift Concurrency", "logo": "mdi:sync" },
+    { "text": "Core Data", "logo": "mdi:database" },
+    { "text": "Swift Package Manager", "logo": "mdi:package-variant" },
+    { "text": "CocoaPods", "logo": "mdi:package-variant-closed" }
+  ],
+  "Kotlin Multiplatform": [
+    { "text": "Kotlin Multiplatform", "logo": "mdi:language-kotlin" },
+    { "text": "expect / actual", "logo": "mdi:swap-horizontal" },
+    { "text": "Ktor Client", "logo": "mdi:api" },
+    { "text": "SKIE", "logo": "mdi:swap-horizontal" },
+    { "text": "KMP-NativeCoroutines", "logo": "mdi:sync" },
+    { "text": "XCFramework / SPM export", "logo": "mdi:apple" },
+    { "text": "Compose Multiplatform", "logo": "mdi:cellphone-link" }
   ],
   "Architecture": [
     { "text": "Multi-module Clean Architecture", "logo": "mdi:layers-outline" },
     { "text": "MVVM / MVI", "logo": "mdi:view-dashboard" },
     { "text": "Repository & Use Case Patterns", "logo": "mdi:folder-multiple" },
+    { "text": "Offline-first", "logo": "mdi:cloud-off-outline" },
     { "text": "Module Graph Enforcement", "logo": "mdi:graph-outline" },
-    { "text": "Architecture Decision Records (ADR)", "logo": "mdi:file-document-outline" }
-  ],
-  "Async & Reactive": [
-    { "text": "Kotlin Coroutines & Flow", "logo": "mdi:sync" },
-    { "text": "Combine", "logo": "mdi:apple" }
-  ],
-  "Dependency Injection": [
-    { "text": "Hilt", "logo": "mdi:code-braces" },
-    { "text": "Koin", "logo": "mdi:code-braces" }
-  ],
-  "Cross-Platform": [
-    { "text": "Kotlin Multiplatform (KMP)", "logo": "mdi:language-kotlin" },
-    { "text": "Compose Multiplatform", "logo": "mdi:cellphone-link" },
-    { "text": "expect / actual", "logo": "mdi:swap-horizontal" },
-    { "text": "KMP → iOS framework export", "logo": "mdi:apple" }
-  ],
-  "Functional": [
-    { "text": "Arrow-kt", "logo": "mdi:arrow-right-bold" }
+    { "text": "Architecture Decision Records", "logo": "mdi:file-document-outline" }
   ],
   "Testing & Quality": [
     { "text": "JUnit 5", "logo": "mdi:test-tube" },
     { "text": "MockK", "logo": "mdi:test-tube" },
     { "text": "Mokkery", "logo": "mdi:test-tube" },
     { "text": "Turbine", "logo": "mdi:test-tube" },
-    { "text": "Paparazzi", "logo": "mdi:camera-outline" },
-    { "text": "Espresso", "logo": "mdi:test-tube" },
-    { "text": "Kover", "logo": "mdi:chart-bar" },
-    { "text": "JaCoCo", "logo": "mdi:chart-bar" },
-    { "text": "Detekt", "logo": "mdi:magnify-scan" },
-    { "text": "Dependency Guard", "logo": "mdi:shield-check-outline" }
+    { "text": "Espresso / UI Automator", "logo": "mdi:cellphone-check" },
+    { "text": "Maestro (E2E)", "logo": "mdi:cellphone-check" },
+    { "text": "Swift Testing / XCUITest", "logo": "mdi:cellphone-check" },
+    { "text": "Roborazzi / Paparazzi", "logo": "mdi:camera-outline" },
+    { "text": "Kover / JaCoCo", "logo": "mdi:chart-bar" },
+    { "text": "Detekt / ktlint", "logo": "mdi:magnify-scan" },
+    { "text": "Dependency Guard", "logo": "mdi:shield-check-outline" },
+    { "text": "Accessibility (WCAG)", "logo": "mdi:human" }
   ],
-  "CI/CD": [
+  "CI/CD & Observability": [
+    { "text": "GitHub Actions", "logo": "mdi:github" },
     { "text": "Bitrise", "logo": "mdi:rocket-launch" },
     { "text": "GitLab CI/CD", "logo": "mdi:gitlab" },
-    { "text": "GitHub Actions", "logo": "mdi:github" },
-    { "text": "Fastlane", "logo": "mdi:fast-forward" }
+    { "text": "Fastlane", "logo": "mdi:fast-forward" },
+    { "text": "Firebase App Distribution", "logo": "mdi:firebase" },
+    { "text": "Crashlytics", "logo": "mdi:bug-outline" },
+    { "text": "PostHog / Firebase Analytics", "logo": "mdi:chart-line" },
+    { "text": "New Relic", "logo": "mdi:chart-line" }
   ],
-  "Data & Networking": [
-    { "text": "Room", "logo": "mdi:database" },
-    { "text": "Retrofit", "logo": "mdi:api" },
-    { "text": "WebSocket (ActionCable)", "logo": "mdi:lan-connect" }
-  ],
-  "Media": [
-    { "text": "ExoPlayer / Media3", "logo": "mdi:play-circle" }
-  ],
-  "Backend Services": [
-    { "text": "Firebase", "logo": "mdi:firebase" },
-    { "text": "Stripe", "logo": "mdi:credit-card" },
-    { "text": "PayPal", "logo": "mdi:cash" }
+  "Full-stack": [
+    { "text": "React Native", "logo": "mdi:react" },
+    { "text": "Next.js", "logo": "mdi:react" },
+    { "text": "Spring Boot", "logo": "mdi:leaf" },
+    { "text": ".NET", "logo": "mdi:dot-net" },
+    { "text": "Ktor (server)", "logo": "mdi:server" },
+    { "text": "Relational databases", "logo": "mdi:database-outline" },
+    { "text": "Firebase / Firestore", "logo": "mdi:firebase" },
+    { "text": "WebSocket (ActionCable)", "logo": "mdi:lan-connect" },
+    { "text": "Stripe / PayPal", "logo": "mdi:credit-card" }
   ],
   "Tools": [
     { "text": "Android Studio", "logo": "mdi:android-studio" },
-    { "text": "Git", "logo": "mdi:git" },
-    { "text": "Gradle", "logo": "mdi:graph" }
+    { "text": "Xcode", "logo": "mdi:apple" },
+    { "text": "Gradle (convention plugins, version catalogs)", "logo": "mdi:graph" },
+    { "text": "Git", "logo": "mdi:git" }
   ]
 }

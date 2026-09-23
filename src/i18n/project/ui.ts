@@ -18,11 +18,13 @@ export const projectTranslationKeys = {
     "project.fuelio.highlight3":
       "Offline-first with Room: stale-while-revalidate emits cached data first, and a failed refresh never blanks the screen",
     "project.fuelio.highlight4":
-      "Kotlin↔Swift bridge via SKIE, KMP-NativeCoroutines and KMP-ObservableViewModel, replacing ~600 lines of hand-rolled interop",
+      "Kotlin↔Swift bridge via SKIE, KMP-NativeCoroutines and KMP-ObservableViewModel, replacing a hand-rolled interop layer",
     "project.fuelio.highlight5":
-      "452 tests across the stack — 362 Kotlin, 64 Swift Testing, 26 XCUITest — plus committed Roborazzi screenshot goldens",
+      "450+ tests across Kotlin, Swift Testing and XCUITest, plus Roborazzi screenshot tests with committed goldens",
     "project.fuelio.highlight6":
-      "9 ADRs and a single-source-of-truth versioned release pipeline for signed Android and iOS builds",
+      "9 ADRs and a release pipeline with a single source of truth for the version: a signed Android build on GitHub Releases and Firebase App Distribution, plus an iOS archive that proves the app packages",
+    "project.fuelio.highlight7":
+      "One set of design tokens defined in Kotlin and consumed by both Compose and SwiftUI, with a test that fails if the Swift side drifts",
 
     // Ringtone Manager
     "project.ringtone.name": "Ringtone Manager",
@@ -67,11 +69,13 @@ export const projectTranslationKeys = {
     "project.fuelio.highlight3":
       "Offline-first con Room: stale-while-revalidate emite primero los datos en caché, y un refresh fallido nunca vacía la pantalla",
     "project.fuelio.highlight4":
-      "Puente Kotlin↔Swift con SKIE, KMP-NativeCoroutines y KMP-ObservableViewModel, en sustitución de ~600 líneas de interop hecho a mano",
+      "Puente Kotlin↔Swift con SKIE, KMP-NativeCoroutines y KMP-ObservableViewModel, en sustitución de una capa de interop hecha a mano",
     "project.fuelio.highlight5":
-      "452 tests en toda la pila — 362 en Kotlin, 64 con Swift Testing, 26 XCUITest — más goldens de Roborazzi commiteados",
+      "Más de 450 tests en Kotlin, Swift Testing y XCUITest, además de tests de screenshots con Roborazzi y goldens versionados",
     "project.fuelio.highlight6":
-      "9 ADRs y un pipeline de release con versión de fuente única para builds firmados de Android e iOS",
+      "9 ADRs y un pipeline de release con la versión como única fuente de verdad: build de Android firmado en GitHub Releases y Firebase App Distribution, y un archive de iOS que demuestra que la app empaqueta",
+    "project.fuelio.highlight7":
+      "Un único set de design tokens definido en Kotlin y consumido tanto por Compose como por SwiftUI, con un test que falla si el lado Swift se desvía",
 
     // Ringtone Manager
     "project.ringtone.name": "Ringtone Manager",

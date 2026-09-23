@@ -7,9 +7,9 @@ export const experienceTranslationKeys = {
     "experience.ifeel.location": "Remote, Spain",
     "experience.ifeel.type": "Full-time",
     "experience.ifeel.bullet1":
-      "Led architectural modernization of 2 production apps (100K+ users): designed multi-module Clean Architecture with 10 independent modules, reducing technical debt by 60%",
+      "Led the architectural modernization of 2 production apps (100K+ users) into a multi-module Clean Architecture of 10 independent modules with explicit dependency boundaries",
     "experience.ifeel.bullet2":
-      "Architected complete XML → Jetpack Compose migration, reducing feature development time by 40% and building a reusable component library shared across applications",
+      "Led and architected the full XML → Jetpack Compose migration, building a reusable component library shared by both applications",
     "experience.ifeel.bullet3":
       "Designed scalable UI layer with MVVM/MVI, implementing 20+ domain use cases with functional error handling using Arrow Either pattern",
     "experience.ifeel.bullet4":
@@ -34,9 +34,9 @@ export const experienceTranslationKeys = {
     "experience.ifeel.location": "Remoto, España",
     "experience.ifeel.type": "Jornada completa",
     "experience.ifeel.bullet1":
-      "Lideré la modernización arquitectónica de 2 apps en producción (100K+ usuarios): diseñé Clean Architecture multi-módulo con 10 módulos independientes, reduciendo la deuda técnica en un 60%",
+      "Lideré la modernización arquitectónica de 2 apps en producción (100K+ usuarios) hacia una Clean Architecture multi-módulo de 10 módulos independientes con fronteras de dependencia explícitas",
     "experience.ifeel.bullet2":
-      "Arquitecté migración completa de XML → Jetpack Compose, reduciendo el tiempo de desarrollo de features en un 40% y construyendo una librería de componentes reutilizables compartida entre aplicaciones",
+      "Lideré y arquitecté la migración completa de XML → Jetpack Compose, construyendo una librería de componentes reutilizables compartida por ambas aplicaciones",
     "experience.ifeel.bullet3":
       "Diseñé capa UI escalable con MVVM/MVI, implementando más de 20 casos de uso de dominio con manejo funcional de errores usando el patrón Arrow Either",
     "experience.ifeel.bullet4":

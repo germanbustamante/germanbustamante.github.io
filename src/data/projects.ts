@@ -10,7 +10,7 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
-  status: "coming-soon" | "in-development" | "live";
+  status: "coming-soon" | "in-development" | "live" | "open-source";
   featured: boolean;
   screenshots?: {
     android: ImageMetadata;
@@ -31,10 +31,12 @@ export const projects: Project[] = [
       "project.fuelio.highlight4",
       "project.fuelio.highlight5",
       "project.fuelio.highlight6",
+      "project.fuelio.highlight7",
     ],
     technologies: [
       "Kotlin Multiplatform",
       "Jetpack Compose",
+      "Material Design 3",
       "SwiftUI",
       "Room",
       "Ktor",
@@ -48,7 +50,7 @@ export const projects: Project[] = [
       "Turbine",
     ],
     githubUrl: "https://github.com/germanbustamante/Fuelio-KMP",
-    status: "live",
+    status: "open-source",
     featured: true,
     screenshots: {
       android: fuelioAndroid,

@@ -80,12 +80,15 @@ function caseStudiesFor(projectId: string) {
                       "bg-accent/10 text-accent",
                     project.status === "live" &&
                       "bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400",
+                    project.status === "open-source" &&
+                      "bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-400",
                   ]}
                 >
                   {project.status === "coming-soon" && t("home.comingSoon")}
                   {project.status === "in-development" &&
                     t("home.inDevelopment")}
                   {project.status === "live" && t("home.live")}
+                  {project.status === "open-source" && t("home.openSource")}
                 </span>
               </div>
             </div>
