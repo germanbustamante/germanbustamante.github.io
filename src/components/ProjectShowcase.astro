@@ -146,6 +146,32 @@ function caseStudiesFor(projectId: string) {
                 {tProj(project.descriptionKey)}
               </p>
 
+              {/* Store listings, for apps that are published */}
+              {(project.googlePlayUrl || project.appStoreUrl) && (
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {project.googlePlayUrl && (
+                    <a
+                      href={project.googlePlayUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-xs font-medium px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-accent hover:text-accent transition-colors"
+                    >
+                      Google Play &rarr;
+                    </a>
+                  )}
+                  {project.appStoreUrl && (
+                    <a
+                      href={project.appStoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-xs font-medium px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-accent hover:text-accent transition-colors"
+                    >
+                      App Store &rarr;
+                    </a>
+                  )}
+                </div>
+              )}
+
               {/* Architecture highlights */}
               <ul class="space-y-1 mb-4">
                 {project.highlightsKeys.map((key) => (

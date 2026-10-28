@@ -7,10 +7,27 @@ export const projectTranslationKeys = {
       "Projects that showcase my expertise in Android architecture, Kotlin Multiplatform, and modern mobile development.",
     "project.caseStudy": "Read the case study",
 
+    // Fuelvo
+    "project.fuelvo.name": "Fuelvo",
+    "project.fuelvo.description":
+      "My own product, live on Google Play and the App Store: fuel prices for every station in Spain and France, with a price map, favourites and price-drop alerts. I built and run all of it alone — the Kotlin Multiplatform apps with native UIs, the Kotlin backend that ingests each country's official open data, and the website.",
+    "project.fuelvo.highlight1":
+      "Kotlin Multiplatform shares ViewModels, domain and an offline-first data layer; the UI is Jetpack Compose on Android and SwiftUI on iOS",
+    "project.fuelvo.highlight2":
+      "Kotlin + Ktor backend on PostgreSQL that ingests official open data from Spain and France every 4 hours (~21K stations)",
+    "project.fuelvo.highlight3":
+      "Price-drop alerts through Firebase Cloud Messaging, with no account or sign-in needed",
+    "project.fuelvo.highlight4":
+      "Release pipeline on GitHub Actions to Google Play and TestFlight, with Maestro smoke tests run against production on every release",
+    "project.fuelvo.highlight5":
+      "Store-ready by design: force update, a remote maintenance switch, analytics only with consent, and App Links / Universal Links to the website's station pages",
+    "project.fuelvo.highlight6":
+      "Grew out of Fuelio, my open-source showcase below: same architecture, taken all the way to the stores",
+
     // Fuelio
     "project.fuelio.name": "Fuelio",
     "project.fuelio.description":
-      "A Kotlin Multiplatform gas-station finder sharing domain, data and presentation logic between Android and iOS, with fully native UI on each platform — Jetpack Compose and SwiftUI, not Compose Multiplatform. Real-time fuel-price comparison with geolocation, offline-first persistence and reactive filtering.",
+      "The open-source origin of Fuelvo. A Kotlin Multiplatform gas-station finder sharing domain, data and presentation logic between Android and iOS, with fully native UI on each platform — Jetpack Compose and SwiftUI, not Compose Multiplatform. Real-time fuel-price comparison with geolocation, offline-first persistence and reactive filtering.",
     "project.fuelio.highlight1":
       "Native UI on both platforms over a shared Kotlin presentation layer — migrated off Compose Multiplatform, documented in an ADR",
     "project.fuelio.highlight2":
@@ -58,10 +75,27 @@ export const projectTranslationKeys = {
       "Proyectos que demuestran mi experiencia en arquitectura Android, Kotlin Multiplatform y desarrollo móvil moderno.",
     "project.caseStudy": "Lee el caso de estudio",
 
+    // Fuelvo
+    "project.fuelvo.name": "Fuelvo",
+    "project.fuelvo.description":
+      "Mi propio producto, publicado en Google Play y en la App Store: precios del combustible de todas las gasolineras de España y Francia, con mapa de precios, favoritas y alertas de bajada de precio. Lo he hecho y lo mantengo yo solo: las apps en Kotlin Multiplatform con UI nativa, el backend en Kotlin que ingiere los datos abiertos oficiales de cada país y la web.",
+    "project.fuelvo.highlight1":
+      "Kotlin Multiplatform comparte ViewModels, dominio y una capa de datos offline-first; la UI es Jetpack Compose en Android y SwiftUI en iOS",
+    "project.fuelvo.highlight2":
+      "Backend en Kotlin + Ktor sobre PostgreSQL que ingiere cada 4 horas los datos abiertos oficiales de España y Francia (~21.000 gasolineras)",
+    "project.fuelvo.highlight3":
+      "Alertas de bajada de precio con Firebase Cloud Messaging, sin necesidad de cuenta ni registro",
+    "project.fuelvo.highlight4":
+      "Pipeline de release en GitHub Actions hacia Google Play y TestFlight, con smoke tests de Maestro contra producción en cada release",
+    "project.fuelvo.highlight5":
+      "Pensada para las tiendas: actualización forzada, interruptor de mantenimiento remoto, analítica solo con consentimiento y App Links / Universal Links a las fichas de la web",
+    "project.fuelvo.highlight6":
+      "Nació de Fuelio, mi escaparate open source de más abajo: la misma arquitectura, llevada hasta las tiendas",
+
     // Fuelio
     "project.fuelio.name": "Fuelio",
     "project.fuelio.description":
-      "Buscador de gasolineras en Kotlin Multiplatform que comparte lógica de dominio, datos y presentación entre Android e iOS, con UI totalmente nativa en cada plataforma — Jetpack Compose y SwiftUI, no Compose Multiplatform. Comparativa de precios en tiempo real con geolocalización, persistencia offline-first y filtrado reactivo.",
+      "El origen open source de Fuelvo. Buscador de gasolineras en Kotlin Multiplatform que comparte lógica de dominio, datos y presentación entre Android e iOS, con UI totalmente nativa en cada plataforma — Jetpack Compose y SwiftUI, no Compose Multiplatform. Comparativa de precios en tiempo real con geolocalización, persistencia offline-first y filtrado reactivo.",
     "project.fuelio.highlight1":
       "UI nativa en ambas plataformas sobre una capa de presentación compartida en Kotlin — migrada desde Compose Multiplatform, documentado en un ADR",
     "project.fuelio.highlight2":

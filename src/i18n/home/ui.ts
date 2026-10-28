@@ -20,14 +20,14 @@ export const homeTranslationKeys = {
     "home.heroTitle": "Android Architect",
     "home.heroSubtitle": "iOS & Kotlin Multiplatform · Full-stack experience",
     "home.heroDescription":
-      "I design and modernize the architecture of production mobile apps used by 100K+ people — multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform with a fully native UI on each platform.",
+      "I design and modernize the architecture of production mobile apps used by 100K+ people — multi-module Clean Architecture, Jetpack Compose migrations, and Kotlin Multiplatform with a fully native UI on each platform. I also built and run Fuelvo, my own app, live on Google Play and the App Store.",
     "home.heroCTA1": "View my work",
     "home.heroCTA2": "Download CV",
 
     // About
     "home.aboutMe": "About Me",
     "home.aboutParagraph":
-      "As an Android Architect, I've led the architectural modernization of two production apps: a modular Clean Architecture, the move from XML to Jetpack Compose, a testing strategy built from zero, and a CI/CD pipeline the team can trust. Beyond Android, I build native iOS apps with SwiftUI and share a Kotlin core between both platforms with Kotlin Multiplatform. I've also worked across the stack: React Native and TypeScript, Next.js on the web, Java with Spring Boot, .NET and Kotlin with Ktor on the backend, and relational databases. I use Claude Code daily for agentic development, while architecture decisions, reviews and tests stay under my own judgment. I write about the decisions behind my work, including the ones that didn't go to plan.",
+      "As an Android Architect, I've led the architectural modernization of two production apps: a modular Clean Architecture, the move from XML to Jetpack Compose, a testing strategy built from zero, and a CI/CD pipeline the team can trust. Beyond Android, I build native iOS apps with SwiftUI and share a Kotlin core between both platforms with Kotlin Multiplatform. That is how I built Fuelvo, a fuel-price app for Spain and France that I designed, shipped to both stores and run alone, from the apps to its Ktor backend and website. I've also worked across the stack: React Native and TypeScript, Next.js on the web, Java with Spring Boot, .NET and Kotlin with Ktor on the backend, and relational databases. I use Claude Code daily for agentic development, while architecture decisions, reviews and tests stay under my own judgment. I write about the decisions behind my work, including the ones that didn't go to plan.",
     "home.technologies": "Technologies I work with:",
 
     // Section Titles
@@ -80,14 +80,14 @@ export const homeTranslationKeys = {
     "home.heroTitle": "Android Architect",
     "home.heroSubtitle": "iOS y Kotlin Multiplatform · Experiencia full-stack",
     "home.heroDescription":
-      "Diseño y modernizo la arquitectura de apps móviles en producción usadas por más de 100K personas — Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform con UI totalmente nativa en cada plataforma.",
+      "Diseño y modernizo la arquitectura de apps móviles en producción usadas por más de 100K personas — Clean Architecture multi-módulo, migraciones a Jetpack Compose y Kotlin Multiplatform con UI totalmente nativa en cada plataforma. Además, he creado y mantengo Fuelvo, mi propia app, publicada en Google Play y en la App Store.",
     "home.heroCTA1": "Ver mi trabajo",
     "home.heroCTA2": "Descargar CV",
 
     // About
     "home.aboutMe": "Sobre Mí",
     "home.aboutParagraph":
-      "Como Android Architect, he liderado la modernización arquitectónica de dos apps en producción: una Clean Architecture modular, el paso de XML a Jetpack Compose, una estrategia de testing construida desde cero y un pipeline de CI/CD en el que el equipo puede confiar. Más allá de Android, desarrollo apps iOS nativas con SwiftUI y comparto un núcleo en Kotlin entre ambas plataformas con Kotlin Multiplatform. También he trabajado en todo el stack: React Native y TypeScript, Next.js en web, Java con Spring Boot, .NET y Kotlin con Ktor en backend, y bases de datos relacionales. Uso Claude Code a diario como herramienta de desarrollo agéntico, con las decisiones de arquitectura, las revisiones y los tests bajo mi criterio. Escribo sobre las decisiones detrás de mi trabajo, incluidas las que no salieron como esperaba.",
+      "Como Android Architect, he liderado la modernización arquitectónica de dos apps en producción: una Clean Architecture modular, el paso de XML a Jetpack Compose, una estrategia de testing construida desde cero y un pipeline de CI/CD en el que el equipo puede confiar. Más allá de Android, desarrollo apps iOS nativas con SwiftUI y comparto un núcleo en Kotlin entre ambas plataformas con Kotlin Multiplatform. Así he construido Fuelvo, una app de precios del combustible para España y Francia que he diseñado, publicado en las dos tiendas y mantengo yo solo, desde las apps hasta su backend en Ktor y su web. También he trabajado en todo el stack: React Native y TypeScript, Next.js en web, Java con Spring Boot, .NET y Kotlin con Ktor en backend, y bases de datos relacionales. Uso Claude Code a diario como herramienta de desarrollo agéntico, con las decisiones de arquitectura, las revisiones y los tests bajo mi criterio. Escribo sobre las decisiones detrás de mi trabajo, incluidas las que no salieron como esperaba.",
     "home.technologies": "Tecnologías con las que trabajo:",
 
     // Section Titles

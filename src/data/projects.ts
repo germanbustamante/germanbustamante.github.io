@@ -1,6 +1,8 @@
 import type { ImageMetadata } from "astro";
 import fuelioAndroid from "~/assets/projects/fuelio_android_list.png";
 import fuelioIos from "~/assets/projects/fuelio_ios_list.png";
+import fuelvoAndroid from "~/assets/projects/fuelvo_android_map.png";
+import fuelvoIos from "~/assets/projects/fuelvo_ios_list.png";
 
 export interface Project {
   id: string;
@@ -10,6 +12,8 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
+  googlePlayUrl?: string;
+  appStoreUrl?: string;
   status: "coming-soon" | "in-development" | "live" | "open-source";
   featured: boolean;
   screenshots?: {
@@ -20,6 +24,44 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "fuelvo",
+    nameKey: "project.fuelvo.name",
+    descriptionKey: "project.fuelvo.description",
+    highlightsKeys: [
+      "project.fuelvo.highlight1",
+      "project.fuelvo.highlight2",
+      "project.fuelvo.highlight3",
+      "project.fuelvo.highlight4",
+      "project.fuelvo.highlight5",
+      "project.fuelvo.highlight6",
+    ],
+    technologies: [
+      "Kotlin Multiplatform",
+      "Jetpack Compose",
+      "SwiftUI",
+      "Ktor (client & server)",
+      "PostgreSQL",
+      "Room",
+      "Koin",
+      "Firebase Cloud Messaging",
+      "GitHub Actions",
+      "Maestro",
+      "Roborazzi",
+      "Astro",
+    ],
+    liveUrl: "https://fuelvo.app",
+    googlePlayUrl:
+      "https://play.google.com/store/apps/details?id=com.germandebustamante.fuelvo",
+    appStoreUrl: "https://apps.apple.com/es/app/id6818618477",
+    status: "live",
+    featured: true,
+    screenshots: {
+      android: fuelvoAndroid,
+      ios: fuelvoIos,
+      alt: "Fuelvo's price map on Android (Jetpack Compose) and its station list on iOS (SwiftUI)",
+    },
+  },
   {
     id: "fuelio",
     nameKey: "project.fuelio.name",

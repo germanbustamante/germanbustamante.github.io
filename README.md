@@ -6,6 +6,9 @@ Multiplatform and full-stack development.
 **Live:** https://germanbustamante.github.io
 
 It hosts my professional profile, featured projects and technical writing, in English and Spanish.
+The lead project is [Fuelvo](https://fuelvo.app), my own fuel-price app, live on
+[Google Play](https://play.google.com/store/apps/details?id=com.germandebustamante.fuelvo) and the
+[App Store](https://apps.apple.com/es/app/id6818618477).
 The case studies are written from real incidents in my own open-source work — for example
 [Fuelio](https://github.com/germanbustamante/Fuelio-KMP), a Kotlin Multiplatform app with fully
 native UI on Android and iOS.
