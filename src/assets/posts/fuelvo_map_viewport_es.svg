@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img">
+<title>El mapa carga más de lo que enseña y solo vuelve a pedir cuando la vista sale de ahí</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#A1A1AA"/></marker><marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E8590C"/></marker></defs>
+<rect x="0" y="0" width="960" height="470" rx="16" fill="#FAFAF9"/>
+<rect x="40" y="60" width="480" height="320" rx="6" fill="#FFF7ED" stroke="#E8590C" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="40" y="46" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E8590C" text-anchor="start">Área cargada: la vista más media vista a cada lado</text>
+<circle cx="200" cy="117" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="349" cy="93" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="296" cy="180" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="78" cy="222" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="69" cy="200" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="84" cy="99" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="246" cy="317" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="108" cy="138" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="315" cy="189" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="497" cy="86" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="443" cy="158" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="118" cy="107" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="193" cy="314" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="134" cy="244" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="343" cy="182" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="302" cy="91" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="79" cy="133" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="362" cy="199" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="195" cy="245" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="414" cy="279" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="163" cy="242" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="291" cy="331" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="385" cy="157" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="499" cy="107" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="243" cy="296" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="121" cy="217" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="70" cy="270" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="401" cy="242" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="451" cy="165" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="369" cy="248" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="316" cy="207" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="268" cy="269" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="80" cy="280" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="427" cy="156" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="228" cy="270" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="62" cy="209" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="129" cy="107" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="79" cy="299" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="111" cy="145" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="230" cy="330" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="89" cy="205" r="4" fill="#A1A1AA" opacity="0.55"/>
+<circle cx="303" cy="333" r="4" fill="#A1A1AA" opacity="0.55"/>
+<rect x="160" y="140" width="240" height="160" rx="6" fill="none" stroke="#18181B" stroke-width="2.2"/>
+<text x="170" y="162" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#18181B" text-anchor="start" stroke="#FFF7ED" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Primera vista: una petición</text>
+<rect x="260" y="208" width="240" height="160" rx="6" fill="none" stroke="#15803D" stroke-width="2.2" stroke-dasharray="6 4"/>
+<text x="270" y="356" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#15803D" text-anchor="start" stroke="#FFF7ED" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Mover dentro: de memoria, 0 peticiones</text>
+<rect x="480" y="310" width="210" height="140" rx="6" fill="none" stroke="#B91C1C" stroke-width="2.2" stroke-dasharray="3 4"/>
+<text x="682" y="438" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#B91C1C" text-anchor="end">Sale del área: petición nueva</text>
+<text x="712" y="92" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#18181B" text-anchor="start">Se sirve de memoria mientras</text>
+<text x="712" y="120" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">✓  el combustible sea el mismo</text>
+<text x="712" y="144" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">✓  la respuesta tenga menos de 10 minutos</text>
+<text x="712" y="168" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">✓  la respuesta no se cortara en 200</text>
+<text x="712" y="192" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">✓  la vista esté dentro del área cargada</text>
+<text x="712" y="250" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#18181B" text-anchor="start">El margen solo se pide</text>
+<text x="712" y="276" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">donde el último recuento dice que el área</text>
+<text x="712" y="296" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">ampliada cabe en una respuesta de 200;</text>
+<text x="712" y="316" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="start">si no, un cuarto, o nada</text>
+</svg>

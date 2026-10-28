@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="450" viewBox="0 0 960 450" role="img">
+<title>How an Android map pin became a bitmap, before and after FUEA-111</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#A1A1AA"/></marker><marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E8590C"/></marker></defs>
+<rect x="0" y="0" width="960" height="450" rx="16" fill="#FAFAF9"/>
+<text x="20" y="38" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#B91C1C" text-anchor="start">Before: a Compose view per pin</text>
+<rect x="15" y="54" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+<text x="120.0" y="81.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">Cluster item</text>
+<text x="120.0" y="100.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">also held the selection</text>
+<line x1="227" y1="86.0" x2="253" y2="86.0" stroke="#A1A1AA" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="255" y="54" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+<text x="360.0" y="81.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">Compose slot</text>
+<text x="360.0" y="100.5" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">clusterItemContent { }</text>
+<line x1="467" y1="86.0" x2="493" y2="86.0" stroke="#A1A1AA" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="495" y="54" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+<text x="600.0" y="81.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">A new view per pin</text>
+<text x="600.0" y="100.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">measure, layout, draw</text>
+<line x1="707" y1="86.0" x2="733" y2="86.0" stroke="#A1A1AA" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="735" y="54" width="210" height="64" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+<text x="840.0" y="81.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">Captured to a bitmap</text>
+<text x="840.0" y="100.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">on the main thread</text>
+<text x="20" y="144" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#B91C1C" text-anchor="start" font-style="italic">Every pin and every cluster, every time · 156–267 views per zoom route · a tap clustered the whole map again</text>
+<line x1="20" y1="170" x2="940" y2="170" stroke="#D4D4D8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="20" y="204" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803D" text-anchor="start">After: a picture per content, drawn once</text>
+<rect x="15" y="220" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+<text x="120.0" y="247.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">MapMarkerVO</text>
+<text x="120.0" y="266.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">from the shared ViewModel</text>
+<rect x="255" y="220" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+<text x="360.0" y="247.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">MapPinContent</text>
+<text x="360.0" y="266.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">text · tier · selected · count</text>
+<rect x="495" y="220" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="1.5"/>
+<text x="600.0" y="247.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">MapPinCache</text>
+<text x="600.0" y="266.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">seen this content?</text>
+<rect x="735" y="220" width="210" height="64" rx="10" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+<text x="840.0" y="247.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#18181B" text-anchor="middle">Marker icon</text>
+<text x="840.0" y="266.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">StationClusterRenderer</text>
+<line x1="227" y1="252.0" x2="253" y2="252.0" stroke="#A1A1AA" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="467" y1="252.0" x2="493" y2="252.0" stroke="#A1A1AA" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="707" y1="252.0" x2="733" y2="252.0" stroke="#E8590C" stroke-width="1.8" marker-end="url(#arrowAccent)"/>
+<text x="720.0" y="212" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#E8590C" text-anchor="middle">hit</text>
+<rect x="495" y="340" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#E8590C" stroke-width="1.5"/>
+<text x="600.0" y="367.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#E8590C" text-anchor="middle">MapPinPainter</text>
+<text x="600.0" y="386.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B" text-anchor="middle">draws it once on a Canvas</text>
+<line x1="600.0" y1="286" x2="600.0" y2="338" stroke="#E8590C" stroke-width="1.8" marker-end="url(#arrowAccent)"/>
+<text x="626.0" y="316.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#E8590C" text-anchor="middle">miss</text>
+<path d="M707,372.0 L840.0,372.0 L840.0,288" fill="none" stroke="#E8590C" stroke-width="1.8" marker-end="url(#arrowAccent)"/>
+<text x="20" y="432" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#15803D" text-anchor="start" font-style="italic">0 Compose views · a few dozen pictures for 200 stations · a tap changes two icons</text>
+</svg>
